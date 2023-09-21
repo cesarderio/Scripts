@@ -49,3 +49,7 @@ This script provides a command-line interface for managing and listing various A
 ## Error Handling
 
 The tool provides basic error handling, ensuring that any AWS-related errors are displayed in a user-friendly manner. If you encounter issues not covered by the error handling, please check your AWS setup and credentials.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
