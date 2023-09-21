@@ -1,5 +1,3 @@
-![](./assets/hood.png)
-
 # Scripts Repository 🚀
 
 A collection of powerful scripts and codes tailored for web development and cybersecurity operations.
