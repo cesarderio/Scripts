@@ -41,9 +41,16 @@ Nmap Automation Tool is a Python-based script that simplifies the process of net
 
 Always ensure you have permission to scan the target IPs and use the tools. Unauthorized scanning can be illegal and unethical. Use this tool responsibly.
 
-## Contributing
+## 📝 Feedback & Contributions
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+We're always looking to improve and expand this tool. If you encounter issues, have feature requests, or want to contribute, please:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b new-feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add a new feature'`).
+5. Push to the branch (`git push origin new-feature-branch`).
+6. Create a new Pull Request.
 
 ## License
 

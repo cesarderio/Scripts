@@ -53,7 +53,30 @@
     - List Dynamodb Tables
     - List EBS Volumes
 
-... [List all other categories and options similarly] ...
+3. **Database**:
+    - List RDS Instances
+
+4. **Network**:
+    - List VPCs & Subnets
+    - List Security Groups & Rules
+    - List Elastic Load Balancers
+    - List Cloudfront Distributions
+    - List Route53 Zones Records
+    - List VPC Peering Connections
+    - List Direct Connect Connections
+
+5. **Containers**:
+    - List ECS Clusters & Services
+
+6. **Security**:
+    - List IAM Users
+    - List IAM Roles Policies
+
+7. **Monitor**:
+    - List Cloudwatch Alarms
+
+8. **Development**:
+    - List API Gateway APIs
 
 ### Error Handling
 
@@ -61,7 +84,14 @@ The tool provides basic error handling, ensuring that any AWS-related errors are
 
 ## 📝 Feedback & Contributions
 
-We're always looking to improve and expand this tool. If you encounter issues, have feature requests, or want to contribute, please [link to your repository or contact method].
+We're always looking to improve and expand this tool. If you encounter issues, have feature requests, or want to contribute, please:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b new-feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add a new feature'`).
+5. Push to the branch (`git push origin new-feature-branch`).
+6. Create a new Pull Request.
 
 ## License
 
