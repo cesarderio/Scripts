@@ -1,3 +1,5 @@
+![](./assets/hood.png)
+
 # Scripts Repository 🚀
 
 A collection of powerful scripts and codes tailored for web development and cybersecurity operations.
@@ -48,7 +50,9 @@ This repository houses a curated collection of scripts I've developed and refine
    ./script_name.sh
    ```
 
-> Note: Some scripts may require elevated permissions. Ensure you understand what the script does before using `sudo`.
+*> Note: PowerShell, Python, etc. scripts will be executed according to their respective conventions or guidelines.*
+
+*> Note: Some scripts may require elevated permissions. Ensure you understand what the script does before using `sudo`.*
 
 ## Contributing
 
