@@ -46,6 +46,66 @@ create_polkit_file() {
     echo "$@" | sudo tee "$file_path"
 }
 
+# Function to install Vscode
+install_vscode() {
+    # Add the Microsoft package signing key to your list of trusted keys and add the package repository
+    wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+    # Update package cache and install VSCode
+    sudo apt update
+    sudo apt install code -y
+}
+
+
+# Check if a command exists
+command_exists() {
+    command -v "$1" &> /dev/null
+}
+
+# Configure git on pc
+configure_git() {
+    # Check if git is installed, if not, install it
+    if ! command_exists git; then
+        echo "Git is not installed. Installing now..."
+        sudo apt install git -y
+    fi
+
+    # Ask the user if they want to configure Git
+    read -p "Do you want to configure Git? (y/n): " configure
+
+    if [[ $configure == "y" || $configure == "Y" ]]; then
+        # Ask for GitHub username
+        read -p "Enter your GitHub username: " git_username
+
+        # Ask for GitHub email
+        read -p "Enter your GitHub email: " git_email
+
+        # Configure Git with the provided username and email
+        git config --global user.name "$git_username"
+        git config --global user.email "$git_email"
+
+        echo "Git has been configured with the provided username and email."
+    else
+       
+
+# Function to install Google Chrome
+install_chrome() {
+    # Download the Google Chrome .deb package
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+    # Install Google Chrome
+    sudo apt install ./google-chrome-stable_current_amd64.deb -y
+
+    # Clean up the downloaded package
+    rm google-chrome-stable_current_amd64.deb
+}
+# Function to set Chrome as default browser
+set_chrome_default() {
+    xdg-settings set default-web-browser google-chrome.desktop
+}
+
+
 # Function to install VirtualBox and add it to favorites
 install_virtualbox() {
     sudo apt install virtualbox -y
@@ -123,6 +183,16 @@ main() {
 
     # Configure XRDP
     configure_xrdp
+
+    # Install Vscode
+    install_vscode
+
+    # Configure Git
+    configure_git
+
+    # Install Google Chrome and set as default browser
+    install_chrome
+    set_chrome_default
 
     # Install VirtualBox
     install_virtualbox
