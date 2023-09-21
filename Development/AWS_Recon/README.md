@@ -26,7 +26,7 @@ This script provides a command-line interface for managing and listing various A
 2. Run the script:
 
    ```bash
-   python aws_management_cli.py
+   python AWS_Recon.py
    ```
 
 3. Navigate through the interactive menu to manage or list AWS resources.

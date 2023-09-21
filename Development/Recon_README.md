@@ -23,14 +23,14 @@ Nmap Automation Tool is a Python-based script that simplifies the process of net
 1. Clone the repository:
 
    ```bash
-   git clone [Your Repository URL]
-   cd [Your Repository Directory]
+   git clone https://github.com/cesarderio/Scripts.git
+   cd Scripts/Development/
    ```
 
 2. Run the script:
 
    ```bash
-   python3 [Your Script Name].py
+   python3 Recon.py
    ```
 
 3. Follow the on-screen prompts to input IP addresses or subnets, select scan types, and provide other necessary information.
