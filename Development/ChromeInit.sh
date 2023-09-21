@@ -21,6 +21,12 @@ sudo apt update && sudo apt install -y google-chrome-stable
 sudo update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
 sudo update-alternatives --set gnome-www-browser /usr/bin/google-chrome-stable
 
+# Add Google Chrome to favorites
+FAVORITES=$(gsettings get org.gnome.shell favorite-apps)
+NEW_FAVORITES=$(echo $FAVORITES | sed "s/]/, 'google-chrome.desktop']/")
+
+gsettings set org.gnome.shell favorite-apps "$NEW_FAVORITES"
+
 echo "Google Chrome has been installed and set as the default browser."
 
 
