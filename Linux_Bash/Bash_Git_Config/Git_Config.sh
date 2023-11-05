@@ -1,6 +1,11 @@
 #!/bin/bash
 
+# Script Name:                  Git Configuration Script
+# Author:                       Raphael Chookagian
+# Date of latest revision:      04/28/2023
+# Purpose:                      Write a script that
 # Check if git is installed
+
 is_git_installed() {
     if git --version &>/dev/null; then
         return 0

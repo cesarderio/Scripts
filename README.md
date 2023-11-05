@@ -7,6 +7,7 @@ A collection of powerful scripts and codes tailored for web development and cybe
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Directories](#directories)
 - [Features](#features)
 - [Installation & Usage](#installation--usage)
 - [Contributing](#contributing)
@@ -15,6 +16,14 @@ A collection of powerful scripts and codes tailored for web development and cybe
 ## Introduction
 
 This repository houses a curated collection of scripts I've developed and refined over time. Whether you're diving deep into web development or navigating the intricate world of cybersecurity, these tools are designed to streamline and enhance your workflow.
+
+## Directories
+
+- **[Development Directory](./Development/)**: Contains programs, applications, and tools currently in development.
+- **[Linux Bash Directory](./Linux_Bash/)**: Houses scripts tailored for Linux environments using the Bash shell.
+- **[Mac Directory](./Mac/)**: Collection of scripts specifically designed for macOS.
+- **[Python Directory](./Python/)**: For all things Python – be it scripts, tools, or other Python-based utilities.
+- **[Windows Directory](./Windows/)**: A compilation of scripts, particularly those written in PowerShell, designed for Windows systems.
 
 ## Features
 

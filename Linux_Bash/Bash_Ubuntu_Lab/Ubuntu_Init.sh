@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Script Name:                  Ubuntu Lab PC setup script
+# Author:                       Raphael Chookagian
+# Date of latest revision:      11/5/2023
+# Purpose:                      This script provides a streamlined process for setting up a lab kit PC required for the Code Fellows OPS Course. This is a collection of/from and credited to Code Fellows. Check out the README for more information.
+
 # Function to install SSH
 install_ssh() {
     sudo apt install ssh -y
@@ -12,15 +17,16 @@ install_xrdp() {
 
 # Function to configure XRDP
 configure_xrdp() {
-    # Set xrdp to run automatically
     sudo systemctl enable --now xrdp
 
-    # Get regular GNOME experience over RDP
     sudo sed -i '4 i\export XDG_CURRENT_DESKTOP=ubuntu:GNOME' /etc/xrdp/startwm.sh
     sudo sed -i '4 i\export GNOME_SHELL_SESSION_MODE=ubuntu' /etc/xrdp/startwm.sh
     sudo sed -i '4 i\export DESKTOP_SESSION=ubuntu' /etc/xrdp/startwm.sh
 
-    # Remove “color profile authentication” popup in XRDP change settings/colors
+    if ! [ -d "/etc/polkit-1/localauthority/50-local.d/" ]; then
+        sudo mkdir -p /etc/polkit-1/localauthority/50-local.d/
+    fi
+
     create_polkit_file "/etc/polkit-1/localauthority/50-local.d/45-allow-colord.pkla" \
         "[Allow Colord all Users]" \
         "Identity=unix-user:*" \
@@ -29,7 +35,6 @@ configure_xrdp() {
         "ResultInactive=no" \
         "ResultActive=yes"
 
-    # Remove “Authentication required to refresh system repositories” popup on login via XRDP
     create_polkit_file "/etc/polkit-1/localauthority/50-local.d/46-allow-update-repo.pkla" \
         "[Allow Package Management all Users]" \
         "Identity=unix-user:*" \
@@ -39,124 +44,87 @@ configure_xrdp() {
         "ResultActive=yes"
 }
 
-# Function to create a polkit file
 create_polkit_file() {
     local file_path=$1
     shift
     echo "$@" | sudo tee "$file_path"
 }
 
-# Function to install Vscode
 install_vscode() {
-    # Add the Microsoft package signing key to your list of trusted keys and add the package repository
     wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
     sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-
-    # Update package cache and install VSCode
     sudo apt update
     sudo apt install code -y
 }
 
-
-# Check if a command exists
 command_exists() {
     command -v "$1" &> /dev/null
 }
 
-# Configure git on pc
 configure_git() {
-    # Check if git is installed, if not, install it
     if ! command_exists git; then
         echo "Git is not installed. Installing now..."
+        sudo apt update
         sudo apt install git -y
     fi
 
-    # Ask the user if they want to configure Git
     read -p "Do you want to configure Git? (y/n): " configure
-
     if [[ $configure == "y" || $configure == "Y" ]]; then
-        # Ask for GitHub username
         read -p "Enter your GitHub username: " git_username
-
-        # Ask for GitHub email
         read -p "Enter your GitHub email: " git_email
-
-        # Configure Git with the provided username and email
         git config --global user.name "$git_username"
         git config --global user.email "$git_email"
-
         echo "Git has been configured with the provided username and email."
-    else
-       
-
-# Function to install Google Chrome
-install_chrome() {
-    # Download the Google Chrome .deb package
-    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-    # Install Google Chrome
-    sudo apt install ./google-chrome-stable_current_amd64.deb -y
-
-    # Clean up the downloaded package
-    rm google-chrome-stable_current_amd64.deb
+    fi
 }
-# Function to set Chrome as default browser
+
+install_chrome() {
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    if [ $? -eq 0 ]; then
+        sudo apt update
+        sudo apt install ./google-chrome-stable_current_amd64.deb -y
+        rm google-chrome-stable_current_amd64.deb
+    else
+        echo "Failed to download Google Chrome. Skipping installation."
+    fi
+}
+
 set_chrome_default() {
     xdg-settings set default-web-browser google-chrome.desktop
 }
 
-
-# Function to install VirtualBox and add it to favorites
 install_virtualbox() {
+    sudo apt update
     sudo apt install virtualbox -y
-
-    # Download and install the VirtualBox extension pack
-    # Download Extenstion Pack for VirtualBox:
-    wget https://download.virtualbox.org/virtualbox/6.1.38/Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
-    # Install Extenstion Pack for VirtualBox:
-    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
-
-    # add to favorites
-    add_to_favorites "virtualbox.desktop"
+    vbox_version=$(vboxmanage --version | sed -r 's/([0-9]+\.){2}[0-9]+.*/&/g' | sed 's/r.*//g' | sed 's/_.*//g')
+    wget https://download.virtualbox.org/virtualbox/$vbox_version/Oracle_VM_VirtualBox_Extension_Pack-$vbox_version.vbox-extpack
+    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-$vbox_version.vbox-extpack
+    rm Oracle_VM_VirtualBox_Extension_Pack-$vbox_version.vbox-extpack
 }
 
-# Function to add an application to favorites in GNOME Shell
 add_to_favorites() {
     local desktop_file=$1
-    gsettings set org.gnome.shell favorite-apps \
-        "$(gsettings get org.gnome.shell favorite-apps | sed 's/.$//'), '$desktop_file']"
+    gsettings set org.gnome.shell favorite-apps "$(gsettings get org.gnome.shell favorite-apps | sed 's/.$//'), '$desktop_file']"
 }
 
-# Function to configure GNOME settings
 configure_gnome() {
-    # Deactivate screen locking
     gsettings set org.gnome.desktop.screensaver lock-enabled false
-
-    # Set dark mode as default
     gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-
-    # Auto open gnome-terminal on login
     mkdir -p ~/.config/autostart/
     create_autostart_desktop_file "gnome-terminal.desktop" "Terminal" "Start Terminal On Startup"
-
-    # Set Favorite Apps
     add_to_favorites "terminal.desktop"
     add_to_favorites "files.desktop"
     add_to_favorites "virtualbox.desktop"
     add_to_favorites "code.desktop"
-
-    # Set Gnome Terminal’s Colors
     wget https://raw.githubusercontent.com/codefellows/setup-guide/main/configs/ops/gnome-terminal-profiles.dconf
     dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
     rm gnome-terminal-profiles.dconf
 }
 
-# Function to create an autostart desktop file
 create_autostart_desktop_file() {
     local desktop_file=$1
     local name=$2
     local comment=$3
-
     tee "$HOME/.config/autostart/$desktop_file" <<EOL
 [Desktop Entry]
 Type=Application
@@ -171,35 +139,22 @@ Comment=$comment
 EOL
 }
 
-# Main function
 main() {
-    # Update and upgrade packages
     sudo apt update
     sudo apt upgrade -y
-
-    # Install SSH and XRDP
     install_ssh
     install_xrdp
-
-    # Configure XRDP
     configure_xrdp
-
-    # Install Vscode
     install_vscode
-
-    # Configure Git
     configure_git
-
-    # Install Google Chrome and set as default browser
     install_chrome
     set_chrome_default
-
-    # Install VirtualBox
     install_virtualbox
-
-    # Configure GNOME settings
     configure_gnome
+    if ! command_exists polkit; then
+        sudo apt update
+        sudo apt install policykit-1 -y
+    fi
 }
 
-# Call the main function
 main

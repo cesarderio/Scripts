@@ -1,25 +1,35 @@
 #!/bin/bash
 
-# Script Name:                  GitHub
+# Script Name:                  VBox_Install
 # Author:                       Raphael Chookagian
-# Date of latest revision:      07/12/2023
-# Purpose:                      Script installs Virtualbox and settings to place it in the dock/desktop
+# Date of latest revision:      10/05/2023
+# Purpose:                      Script installs VirtualBox and settings to place it in the dock/desktop
 
-# Main
-
-sudo apt update
+# Function to check the last command's status
+check_status() {
+    if [ $? -ne 0 ]; then
+        echo "Error encountered. Exiting."
+        exit 1
+    fi
+}
 
 # Function to install VirtualBox and add it to favorites
 install_virtualbox() {
     sudo apt install virtualbox -y
+    check_status
 
-    # Download and install the VirtualBox extension pack
-    # Download Extenstion Pack for VirtualBox:
+    # Download the VirtualBox extension pack
     wget https://download.virtualbox.org/virtualbox/6.1.38/Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
-    # Install Extenstion Pack for VirtualBox:
-    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
+    check_status
 
-    # add to favorites
+    # Install the VirtualBox extension pack
+    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
+    check_status
+
+    # Cleanup - remove the downloaded extension pack
+    rm Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
+
+    # Add VirtualBox to favorites
     add_to_favorites "virtualbox.desktop"
 }
 
@@ -29,6 +39,10 @@ add_to_favorites() {
     gsettings set org.gnome.shell favorite-apps \
         "$(gsettings get org.gnome.shell favorite-apps | sed 's/.$//'), '$desktop_file']"
 }
+
+# Main
+sudo apt update
+check_status
 
 install_virtualbox
 
