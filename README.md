@@ -2,10 +2,13 @@
 
 A collection of powerful scripts and codes tailored for web development and cybersecurity operations.
 
-<div style="display: flex; justify-content: space-between;">
+| ![Banner Image](./assets/tools.png) | ![Banner Image](./assets/hoode.png) |
+|:---:|:---:|
+
+<!-- <div style="display: flex; justify-content: space-between;">
     <img src="./assets/tools.png" alt="Banner Image" width="50%">
     <img src="./assets/hoode.png" alt="Banner Image" width="50%">
-</div>
+</div> -->
 
 <!-- ![Banner Image](./assets/tools.png) -->
 <!-- ![Banner Image](./assets/hoode.png) -->
