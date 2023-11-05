@@ -2,7 +2,7 @@
 
 A collection of bash scripts tailored to simplify, automate, and enhance operations on Linux systems.
 
-![Bash Banner Image](../assets/astro.png)
+![Bash Banner Image](../assets/bash.png)
 
 ## Table of Contents
 
@@ -10,7 +10,6 @@ A collection of bash scripts tailored to simplify, automate, and enhance operati
 - [Highlighted Scripts](#highlighted-scripts)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Contact](#contact)
 
 ## Overview
 

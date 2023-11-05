@@ -2,8 +2,7 @@
 
 A collection of Python scripts tailored for various operations, mirroring the functionality of their Bash counterparts for enhanced compatibility and flexibility on diverse platforms.
 
-![Python Banner Image](./assets/python_banner.png)
-<!-- You can replace the above path with an actual image if you have one for the python scripts directory -->
+![Python Banner Image](../assets/python.png)
 
 ## Table of Contents
 
