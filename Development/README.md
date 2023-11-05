@@ -2,7 +2,8 @@
 
 A dedicated space for programs, applications, and tools that are currently in development.
 
-![Dev Banner Image](../assets/astro.png)
+| ![Banner Image](./assets/dev.png) | ![Banner Image](./assets/hoode.png) |
+|:---:|:---:|
 
 ## Table of Contents
 
