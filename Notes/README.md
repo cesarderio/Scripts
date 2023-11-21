@@ -155,7 +155,7 @@ This cheat sheet is a comprehensive guide for Linux commands, tailored for DevOp
 
 - **`nano`**, **`vi`**, or **`emacs`**: Introduce basic usage of these text editors for editing configuration files and scripts.
 
-## Additional Sections
+<!-- ## Additional Sections -->
 
 <br>
 
@@ -166,9 +166,11 @@ This cheat sheet is a comprehensive guide for Linux commands, tailored for DevOp
 
 <br>
 
-### Scripting Examples
+## Scripting Examples
 
-#### Example 1: Directory Cleanup Script
+<br>
+
+### Example 1: Directory Cleanup Script
 
 This script demonstrates how to use loops, conditionals, and functions to clean up old files in a specified directory.
 
@@ -201,7 +203,9 @@ echo "Cleanup completed."
 Usage: `./cleanup_script.sh /path/to/directory 30`
 (This script will delete files in the specified directory that are older than 30 days.)
 
-#### Example 2: System Health Check Script
+<br>
+
+### Example 2: System Health Check Script
 
 This script uses loops, conditionals, and system commands to perform a basic system health check.
 
@@ -245,9 +249,11 @@ Usage: `./health_check_script.sh`
 
 <br>
 
-### Troubleshooting Common Issues
+## Troubleshooting Common Issues
 
-#### System Recovery
+<br>
+
+### System Recovery
 
 When dealing with system recovery, it's crucial to have a basic understanding of diagnostic and repair commands. Here are some common tools and their uses:
 
@@ -261,7 +267,9 @@ When dealing with system recovery, it's crucial to have a basic understanding of
 
 - **Backup and Restore Commands**: Knowing how to backup (`tar`, `rsync`) and restore your data is crucial. Regular backups can mitigate the damage caused by system failures.
 
-#### Networking Issues
+<br>
+
+### Networking Issues
 
 Networking problems are common in any system. Here are basic commands to troubleshoot network connectivity:
 
@@ -285,9 +293,11 @@ Networking problems are common in any system. Here are basic commands to trouble
 
 <br>
 
-### Version Control
+## Version Control
 
-#### Basic Git Commands
+<br>
+
+### Basic Git Commands
 
 Git is a widely-used version control system that allows multiple people to work on the same codebase. It helps in tracking changes, collaborating with others, and reverting to previous states if necessary. Here are some fundamental Git commands:
 
@@ -321,9 +331,11 @@ Git is a widely-used version control system that allows multiple people to work 
 
 <br>
 
-### Containerization and Virtualization
+## Containerization and Virtualization
 
-#### Docker Commands
+<br>
+
+### Docker Commands
 
 Docker is a popular tool for containerization, allowing you to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
 
@@ -345,7 +357,9 @@ Docker is a popular tool for containerization, allowing you to package applicati
 
 - **`docker exec -it [container_id] [command]`**: Executes a command inside a running container, e.g., accessing the shell.
 
-#### Kubernetes Commands
+<br>
+
+### Kubernetes Commands
 
 Kubernetes is an orchestration system for Docker containers, automating their deployment, scaling, and operations.
 
