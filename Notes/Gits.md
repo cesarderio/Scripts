@@ -1,4 +1,4 @@
-# Basic Git Commands
+## Basic Git Commands
 
 Git is a widely-used version control system that allows multiple people to work on the same codebase. It helps in tracking changes, collaborating with others, and reverting to previous states if necessary. Here are some fundamental Git commands:
 
