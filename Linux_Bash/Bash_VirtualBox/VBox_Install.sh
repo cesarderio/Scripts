@@ -2,7 +2,7 @@
 
 # Script Name:                  VBox_Install
 # Author:                       Raphael Chookagian
-# Date of latest revision:      10/05/2023
+# Date of latest revision:      12/07/2023
 # Purpose:                      Script installs VirtualBox and settings to place it in the dock/desktop
 
 # Function to check the last command's status
@@ -15,19 +15,19 @@ check_status() {
 
 # Function to install VirtualBox and add it to favorites
 install_virtualbox() {
-    sudo apt install virtualbox -y
+    sudo apt install virtualbox-7.0 -y
     check_status
 
     # Download the VirtualBox extension pack
-    wget https://download.virtualbox.org/virtualbox/6.1.38/Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
+    wget https://download.virtualbox.org/virtualbox/7.0.0/Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-extpack
     check_status
 
     # Install the VirtualBox extension pack
-    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
+    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-extpack
     check_status
 
     # Cleanup - remove the downloaded extension pack
-    rm Oracle_VM_VirtualBox_Extension_Pack-6.1.38.vbox-extpack
+    rm Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-extpack
 
     # Add VirtualBox to favorites
     add_to_favorites "virtualbox.desktop"
