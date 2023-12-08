@@ -32,21 +32,27 @@ remove_existing_virtualbox() {
 
 
 
-# Function to install VirtualBox and add it to favorites
+# Function to install VirtualBox 7 and add it to favorites
 install_virtualbox() {
-    sudo apt install virtualbox-7.0 -y
+    # Download VirtualBox 7.0.12 Debian package
+    wget https://download.virtualbox.org/virtualbox/7.0.12/virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
     check_status
 
-    # Download the VirtualBox extension pack
-    wget https://download.virtualbox.org/virtualbox/7.0.0/Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-extpack
+    # Install the downloaded package
+    sudo dpkg -i virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
     check_status
 
-    # Install the VirtualBox extension pack
-    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-extpack
+    # Download the VirtualBox 7 extension pack
+    wget https://download.virtualbox.org/virtualbox/7.0.12/Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
     check_status
 
-    # Cleanup - remove the downloaded extension pack
-    rm Oracle_VM_VirtualBox_Extension_Pack-7.0.0.vbox-extpack
+    # Install the VirtualBox 7 extension pack
+    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
+    check_status
+
+    # Cleanup - remove the downloaded files
+    rm virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+    rm Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
 
     # Add VirtualBox to favorites
     add_to_favorites "virtualbox.desktop"
@@ -63,6 +69,7 @@ add_to_favorites() {
 sudo apt update
 check_status
 
+remove_existing_virtualbox
 install_virtualbox
 
 # End
