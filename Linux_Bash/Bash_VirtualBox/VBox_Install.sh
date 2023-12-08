@@ -13,6 +13,25 @@ check_status() {
     fi
 }
 
+# Function to remove existing VirtualBox installations
+remove_existing_virtualbox() {
+    echo "Checking for existing VirtualBox installations..."
+
+    # Check if VirtualBox is installed and remove it
+    if dpkg -l | grep -i virtualbox; then
+        echo "Removing existing VirtualBox installations..."
+        sudo apt-get remove --purge -y "^virtualbox.*"
+        check_status
+        echo "Existing VirtualBox installations removed."
+    else
+        echo "No existing VirtualBox installations found."
+    fi
+}
+
+
+
+
+
 # Function to install VirtualBox and add it to favorites
 install_virtualbox() {
     sudo apt install virtualbox-7.0 -y
