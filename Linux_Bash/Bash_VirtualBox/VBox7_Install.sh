@@ -2,7 +2,7 @@
 
 # Script Name:                  VBox_Install
 # Author:                       Raphael Chookagian
-# Date of latest revision:      12/08/2023
+# Date of latest revision:      12/07/2023
 # Purpose:                      Script installs VirtualBox 7 and settings to place it in the dock/desktop
 
 # Function to check the last command's status
@@ -10,88 +10,6 @@ check_status() {
     if [ $? -ne 0 ]; then
         echo "Error encountered. Exiting."
         exit 1
-    fi
-}
-
-# Function to terminate all VirtualBox processes and stop services
-terminate_vbox_processes() {
-    echo "Terminating any running VirtualBox processes and stopping services..."
-
-    # Forcefully terminate VirtualBox GUI and background services
-    sudo pkill -f "VirtualBox"
-    sudo pkill -f "VBoxXPCOMIPCD"
-    sudo pkill -f "VBoxSVC"
-    sudo pkill -f "VBoxNetDHCP"
-    sudo pkill -f "VBoxNetNAT"
-    sudo pkill -f "VBoxHeadless"
-    sudo pkill -f "VBoxManage"
-
-    # Stop VirtualBox services
-    sudo systemctl stop vboxdrv vboxballoonctrl-service vboxautostart-service vboxweb-service
-
-    # Wait for processes and services to terminate
-    sleep 10
-
-    # Check if any VirtualBox process is still running
-    if pgrep -f "VirtualBox" > /dev/null; then
-        echo "Some VirtualBox processes are still running. Please close them manually."
-        exit 1
-    fi
-}
-
-# Function to shut down running VMs
-shutdown_vms() {
-    echo "Shutting down all running VirtualBox VMs..."
-
-    # Shut down all running VMs
-    running_vms=$(VBoxManage list runningvms | awk '{print $1}' | sed 's/"//g')
-    if [ -n "$running_vms" ]; then
-        for vm in $running_vms; do
-            echo "Powering off VM: $vm"
-            VBoxManage controlvm "$vm" poweroff
-            while VBoxManage list runningvms | grep -q "$vm"; do
-                echo "Waiting for VM $vm to power off..."
-                sleep 5
-            done
-        done
-    else
-        echo "No running VMs found."
-    fi
-}
-
-# Function to remove existing VirtualBox installations
-remove_existing_virtualbox() {
-    echo "Checking for existing VirtualBox installations..."
-
-    # Check if VirtualBox is installed and remove it
-    if dpkg -l | grep -i virtualbox; then
-        echo "Removing existing VirtualBox installations..."
-        sudo apt-get remove --purge -y "^virtualbox.*"
-        check_status
-        echo "Existing VirtualBox installations removed."
-    else
-        echo "No existing VirtualBox installations found."
-    fi
-}
-
-# Function to shut down running VMs and uninstall the existing VirtualBox extension pack
-shutdown_vms_and_remove_extpack() {
-    echo "Shutting down running VirtualBox VMs..."
-
-    # Shut down all running VMs
-    running_vms=$(VBoxManage list runningvms | awk '{print $1}' | sed 's/"//g')
-    if [ -n "$running_vms" ]; then
-        for vm in $running_vms; do
-            VBoxManage controlvm "$vm" poweroff
-            check_status
-        done
-    fi
-
-    echo "Uninstalling existing VirtualBox Extension Pack..."
-    # Check if Extension Pack is installed and uninstall it
-    if VBoxManage list extpacks | grep -q "Oracle VM VirtualBox Extension Pack"; then
-        VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
-        check_status
     fi
 }
 
@@ -112,15 +30,12 @@ remove_existing_virtualbox() {
 
 # Function to install VirtualBox 7 and add it to favorites
 install_virtualbox() {
-    vbox_deb="virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb"
-    vbox_extpack="Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack"
-
     # Download VirtualBox 7.0.12 Debian package
-    wget "https://download.virtualbox.org/virtualbox/7.0.12/$vbox_deb"
+    wget https://download.virtualbox.org/virtualbox/7.0.12/virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
     check_status
 
     # Install the downloaded package
-    sudo dpkg -i "$vbox_deb"
+    sudo dpkg -i virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
     if [ $? -ne 0 ]; then
         echo "Attempting to fix broken dependencies..."
         sudo apt-get install -f
@@ -128,16 +43,16 @@ install_virtualbox() {
     fi
 
     # Download the VirtualBox 7 extension pack
-    wget "https://download.virtualbox.org/virtualbox/7.0.12/$vbox_extpack"
+    wget https://download.virtualbox.org/virtualbox/7.0.12/Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
     check_status
 
     # Install the VirtualBox 7 extension pack
-    VBoxManage extpack install "$vbox_extpack"
+    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
     check_status
 
     # Cleanup - remove the downloaded files
-    rm "$vbox_deb"
-    rm "$vbox_extpack"
+    rm virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+    rm Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
 
     # Add VirtualBox to favorites
     add_to_favorites "virtualbox.desktop"
@@ -154,8 +69,6 @@ add_to_favorites() {
 sudo apt update
 check_status
 
-terminate_vbox_processes
-shutdown_vms_and_remove_extpack
 remove_existing_virtualbox
 install_virtualbox
 
