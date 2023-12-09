@@ -13,9 +13,9 @@ check_status() {
     fi
 }
 
-# Function to terminate all VirtualBox processes
+# Function to terminate all VirtualBox processes and stop services
 terminate_vbox_processes() {
-    echo "Terminating any running VirtualBox processes..."
+    echo "Terminating any running VirtualBox processes and stopping services..."
 
     # Forcefully terminate VirtualBox GUI and background services
     sudo pkill -f "VirtualBox"
@@ -26,13 +26,51 @@ terminate_vbox_processes() {
     sudo pkill -f "VBoxHeadless"
     sudo pkill -f "VBoxManage"
 
-    # Wait for processes to terminate
+    # Stop VirtualBox services
+    sudo systemctl stop vboxdrv vboxballoonctrl-service vboxautostart-service vboxweb-service
+
+    # Wait for processes and services to terminate
     sleep 10
 
     # Check if any VirtualBox process is still running
     if pgrep -f "VirtualBox" > /dev/null; then
-        echo "Some VirtualBox processes are still running. Please close them manually and press Enter to continue."
-        read -p "Press Enter to continue after you have manually closed VirtualBox..."
+        echo "Some VirtualBox processes are still running. Please close them manually."
+        exit 1
+    fi
+}
+
+# Function to shut down running VMs
+shutdown_vms() {
+    echo "Shutting down all running VirtualBox VMs..."
+
+    # Shut down all running VMs
+    running_vms=$(VBoxManage list runningvms | awk '{print $1}' | sed 's/"//g')
+    if [ -n "$running_vms" ]; then
+        for vm in $running_vms; do
+            echo "Powering off VM: $vm"
+            VBoxManage controlvm "$vm" poweroff
+            while VBoxManage list runningvms | grep -q "$vm"; do
+                echo "Waiting for VM $vm to power off..."
+                sleep 5
+            done
+        done
+    else
+        echo "No running VMs found."
+    fi
+}
+
+# Function to remove existing VirtualBox installations
+remove_existing_virtualbox() {
+    echo "Checking for existing VirtualBox installations..."
+
+    # Check if VirtualBox is installed and remove it
+    if dpkg -l | grep -i virtualbox; then
+        echo "Removing existing VirtualBox installations..."
+        sudo apt-get remove --purge -y "^virtualbox.*"
+        check_status
+        echo "Existing VirtualBox installations removed."
+    else
+        echo "No existing VirtualBox installations found."
     fi
 }
 
