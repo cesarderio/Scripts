@@ -5,7 +5,7 @@
 
 ## Description
 
-The `VBox_Install` script automates the process of installing VirtualBox on a Linux system. After installation, the script also fetches and installs the VirtualBox extension pack for version 6.1.38. To enhance the user's experience, the script also ensures that VirtualBox is conveniently placed in the dock/desktop as a favorite application.
+The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the installation of VirtualBox on Linux systems. Choose between version 6 and the newer version 7. Each script installs the respective version of VirtualBox,as well as fetching and installing the corresponding extension pack. To enhance usability, the scripts ensure that VirtualBox is conveniently placed in the dock/desktop as a favorite application, making it easily accessible for the user.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ The `VBox_Install` script automates the process of installing VirtualBox on a Li
 
 ## Installation Instructions
 
-1. Clone the repository or download the `VBox_Install.sh` script.
+1. Clone the repository or download the `VBox6_Install.sh` or `VBox7_Install.sh` script.
 2. Provide execution permissions:
 
    ```bash

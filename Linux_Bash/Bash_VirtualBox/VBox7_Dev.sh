@@ -83,6 +83,23 @@ remove_existing_virtualbox() {
     fi
 }
 
+
+# Function to force remove VirtualBox
+force_remove_virtualbox() {
+    echo "WARNING: Force removal of VirtualBox can leave your system in an inconsistent state."
+    read -p "Are you sure you want to force remove VirtualBox? (y/N): " choice
+    if [[ "$choice" =~ ^[Yy]$ ]]; then
+        echo "Force removing VirtualBox..."
+        sudo dpkg --remove --force-remove-reinstreq virtualbox-7.0
+        check_status "Failed to force remove VirtualBox"
+        echo "VirtualBox has been force removed."
+    else
+        echo "Force removal aborted."
+        exit 1
+    fi
+}
+
+
 # Function to install VirtualBox 7 and add it to favorites
 install_virtualbox() {
     vbox_deb="virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb"
@@ -131,7 +148,7 @@ fix_dpkg
 compile_vbox_kernel_module
 terminate_vbox_processes
 shutdown_vms
-remove_existing_virtualbox
+remove_existing_virtualbox || force_remove_virtualbox
 install_virtualbox
 
 # End
