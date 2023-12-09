@@ -2,7 +2,7 @@
 
 # Script Name:                  VBox_Install
 # Author:                       Raphael Chookagian
-# Date of latest revision:      12/07/2023
+# Date of latest revision:      12/08/2023
 # Purpose:                      Script installs VirtualBox 7 and settings to place it in the dock/desktop
 
 # Function to check the last command's status
@@ -13,18 +13,18 @@ check_status() {
     fi
 }
 
-
 # Function to terminate all VirtualBox processes
 terminate_vbox_processes() {
     echo "Terminating any running VirtualBox processes..."
 
-    # Terminate all VirtualBox related processes
-    sudo pkill VBox
+    # Forcefully terminate all VirtualBox related processes
+    sudo pkill -9 VBox
+    sudo killall VBoxSVC
+    sudo killall VBoxXPCOMIPCD
 
     # Wait for a few seconds to ensure processes are terminated
-    sleep 5
+    sleep 10
 }
-
 
 # Function to shut down running VMs and uninstall the existing VirtualBox extension pack
 shutdown_vms_and_remove_extpack() {
@@ -106,6 +106,7 @@ add_to_favorites() {
 sudo apt update
 check_status
 
+terminate_vbox_processes
 shutdown_vms_and_remove_extpack
 remove_existing_virtualbox
 install_virtualbox
