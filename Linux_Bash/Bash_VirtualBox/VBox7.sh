@@ -13,10 +13,19 @@ check_status() {
     fi
 }
 
+# Function to fix interrupted dpkg processes
+fix_dpkg() {
+    echo "Checking for interrupted dpkg processes..."
+    sudo dpkg --configure -a
+    check_status "Failed to fix interrupted dpkg processes"
+}
+
+
 # Function to compile the VirtualBox kernel module
 compile_vbox_kernel_module() {
     echo "Compiling the VirtualBox kernel module..."
     sudo /sbin/vboxconfig
+    check_status "Failed to compile the VirtualBox kernel module"
 }
 
 # Function to terminate all VirtualBox processes and stop services
@@ -118,6 +127,7 @@ add_to_favorites() {
 sudo apt update
 check_status "Apt update failed."
 
+fix_dpkg
 compile_vbox_kernel_module
 terminate_vbox_processes
 shutdown_vms
