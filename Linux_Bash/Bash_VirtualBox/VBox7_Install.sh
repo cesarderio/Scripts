@@ -13,6 +13,28 @@ check_status() {
     fi
 }
 
+
+# Function to shut down running VMs and uninstall the existing VirtualBox extension pack
+shutdown_vms_and_remove_extpack() {
+    echo "Shutting down running VirtualBox VMs..."
+
+    # Shut down all running VMs
+    running_vms=$(VBoxManage list runningvms | awk '{print $1}' | sed 's/"//g')
+    if [ -n "$running_vms" ]; then
+        for vm in $running_vms; do
+            VBoxManage controlvm "$vm" poweroff
+            check_status
+        done
+    fi
+
+    echo "Uninstalling existing VirtualBox Extension Pack..."
+    # Check if Extension Pack is installed and uninstall it
+    if VBoxManage list extpacks | grep -q "Oracle VM VirtualBox Extension Pack"; then
+        VBoxManage extpack uninstall "Oracle VM VirtualBox Extension Pack"
+        check_status
+    fi
+}
+
 # Function to remove existing VirtualBox installations
 remove_existing_virtualbox() {
     echo "Checking for existing VirtualBox installations..."
@@ -30,12 +52,15 @@ remove_existing_virtualbox() {
 
 # Function to install VirtualBox 7 and add it to favorites
 install_virtualbox() {
+    vbox_deb="virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb"
+    vbox_extpack="Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack"
+
     # Download VirtualBox 7.0.12 Debian package
-    wget https://download.virtualbox.org/virtualbox/7.0.12/virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+    wget "https://download.virtualbox.org/virtualbox/7.0.12/$vbox_deb"
     check_status
 
     # Install the downloaded package
-    sudo dpkg -i virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
+    sudo dpkg -i "$vbox_deb"
     if [ $? -ne 0 ]; then
         echo "Attempting to fix broken dependencies..."
         sudo apt-get install -f
@@ -43,16 +68,16 @@ install_virtualbox() {
     fi
 
     # Download the VirtualBox 7 extension pack
-    wget https://download.virtualbox.org/virtualbox/7.0.12/Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
+    wget "https://download.virtualbox.org/virtualbox/7.0.12/$vbox_extpack"
     check_status
 
     # Install the VirtualBox 7 extension pack
-    VBoxManage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
+    VBoxManage extpack install "$vbox_extpack"
     check_status
 
     # Cleanup - remove the downloaded files
-    rm virtualbox-7.0_7.0.12-159484~Ubuntu~jammy_amd64.deb
-    rm Oracle_VM_VirtualBox_Extension_Pack-7.0.12.vbox-extpack
+    rm "$vbox_deb"
+    rm "$vbox_extpack"
 
     # Add VirtualBox to favorites
     add_to_favorites "virtualbox.desktop"
@@ -69,6 +94,7 @@ add_to_favorites() {
 sudo apt update
 check_status
 
+shutdown_vms_and_remove_extpack
 remove_existing_virtualbox
 install_virtualbox
 
