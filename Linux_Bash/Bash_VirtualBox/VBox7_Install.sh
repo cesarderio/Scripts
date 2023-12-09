@@ -17,10 +17,8 @@ check_status() {
 terminate_vbox_processes() {
     echo "Terminating any running VirtualBox processes..."
 
-    # Forcefully terminate VirtualBox GUI
+    # Forcefully terminate VirtualBox GUI and background services
     sudo pkill -f "VirtualBox"
-
-    # Forcefully terminate all VirtualBox background services
     sudo pkill -f "VBoxXPCOMIPCD"
     sudo pkill -f "VBoxSVC"
     sudo pkill -f "VBoxNetDHCP"
@@ -28,15 +26,13 @@ terminate_vbox_processes() {
     sudo pkill -f "VBoxHeadless"
     sudo pkill -f "VBoxManage"
 
-    # Wait for a few seconds to ensure processes are terminated
+    # Wait for processes to terminate
     sleep 10
 
     # Check if any VirtualBox process is still running
     if pgrep -f "VirtualBox" > /dev/null; then
-        echo "Some VirtualBox processes are still running. Please close them manually."
-        exit 1
-    else
-        echo "All VirtualBox processes terminated."
+        echo "Some VirtualBox processes are still running. Please close them manually and press Enter to continue."
+        read -p "Press Enter to continue after you have manually closed VirtualBox..."
     fi
 }
 
