@@ -14,6 +14,18 @@ check_status() {
 }
 
 
+# Function to terminate all VirtualBox processes
+terminate_vbox_processes() {
+    echo "Terminating any running VirtualBox processes..."
+
+    # Terminate all VirtualBox related processes
+    sudo pkill VBox
+
+    # Wait for a few seconds to ensure processes are terminated
+    sleep 5
+}
+
+
 # Function to shut down running VMs and uninstall the existing VirtualBox extension pack
 shutdown_vms_and_remove_extpack() {
     echo "Shutting down running VirtualBox VMs..."
