@@ -17,8 +17,8 @@ This script offers a seamless approach to setting up the lab kit PC required for
 ## Usage
 
 1. **Download**: Secure the script onto your system.
-2. **Permission**: Bestow the script with execute permissions via `chmod +x script_name.sh`.
-3. **Execute**: Initiate the script with `./script_name.sh`.
+2. **Permission**: Bestow the script with execute permissions via `chmod +x Ubuntu_Init.sh`.
+3. **Execute**: Initiate the script with `./Ubuntu_Init.sh`.
 
 > **Note**: Due to the nature of operations, the script may request `sudo` privileges, prompting users for their password.
 

@@ -4,7 +4,7 @@ This script facilitates the installation and configuration of SSH and RDP (xrdp)
 
 ## Overview
 
-The `Ubuntu_Lab_PC_Setup.sh` bash script simplifies the following processes:
+The `SSH_RDP.sh` bash script simplifies the following processes:
 
 1. Installs SSH and XRDP if they are not already installed on the system.
 2. Configures XRDP for optimal performance with Ubuntu's GNOME desktop environment.
@@ -19,9 +19,9 @@ The `Ubuntu_Lab_PC_Setup.sh` bash script simplifies the following processes:
 ## Usage
 
 1. Open a terminal window.
-2. Navigate to the directory where `Ubuntu_Lab_PC_Setup.sh` is located.
-3. Give execute permissions to the script: `chmod +x Ubuntu_Lab_PC_Setup.sh`.
-4. Execute the script: `./Ubuntu_Lab_PC_Setup.sh`.
+2. Navigate to the directory where `SSH_RDP.sh` is located.
+3. Give execute permissions to the script: `chmod +x SSH_RDP.sh`.
+4. Execute the script: `./SSH_RDP.sh`.
 5. The script will run through the installation and configuration process, providing feedback and prompts as necessary.
 
 ## Steps
