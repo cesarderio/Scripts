@@ -19,15 +19,15 @@ This directory comprises a variety of bash scripts designed for diverse function
 
 Here are a few scripts that stand out:
 
-- **Bash Chrome Installer**: Simplify the process of installing Google Chrome.
-- **Bash Domain Checker**: Quickly check the status and details of a domain.
-- **Bash Git Config**: Streamline the git configuration process.
-- **Bash Kill PID**: Easily view, manage and terminate runnning processes.
-- **Bash SSH & RDP**: Quickly get SSH and RDP installed and configured on your machine.
-- **Bash System Info Script**: Retrieve comprehensive system information at a glance.
-- **Bash System Update**: Efficiently update, upgrade, and maintain Linux OS.
-- **Bash Lab PC Setup**: Ideal for setting up lab PCs with desired configurations.
-- **Bash VirtualBox Installer**: A hassle-free way to install VirtualBox.
+- **[Bash Chrome Installer](./Bash_Chrome/)**: Simplify the process of installing Google Chrome.
+- **[Bash Domain Checker](./Bash_Dom_Check/)**: Quickly check the status and details of a domain.
+- **[Bash Git Config](./Bash_Git_Config/)**: Streamline the git configuration process.
+- **[Bash Kill PID](./Bash_Kill_PID/)**: Easily view, manage and terminate runnning processes.
+- **[Bash SSH & RDP](./Bash_SSH_RDP/)**: Quickly get SSH and RDP installed and configured on your machine.
+- **[Bash System Info Script](./Bash_Sys_Info/)**: Retrieve comprehensive system information at a glance.
+- **[Bash System Update](./Bash_Sys_Update/)**: Efficiently update, upgrade, and maintain Linux OS.
+- **[Bash Lab PC Setup](./Bash_Ubuntu_Lab/)**: Ideal for setting up lab PCs with desired configurations.
+- **[Bash VirtualBox Installer](./Bash_VirtualBox/)**: A hassle-free way to install VirtualBox.
 
 More scripts are added regularly, so dive into the directory to explore them!
 
