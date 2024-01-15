@@ -22,9 +22,12 @@ Here are a few scripts that stand out:
 - **Bash Chrome Installer**: Simplify the process of installing Google Chrome.
 - **Bash Domain Checker**: Quickly check the status and details of a domain.
 - **Bash Git Config**: Streamline the git configuration process.
+- **Bash Kill PID**: Easily view, manage and terminate runnning processes.
+- **Bash SSH & RDP**: Quickly get SSH and RDP installed and configured on your machine.
 - **Bash System Info Script**: Retrieve comprehensive system information at a glance.
+- **Bash System Update**: Efficiently update, upgrade, and maintain Linux OS.
 - **Bash Lab PC Setup**: Ideal for setting up lab PCs with desired configurations.
-- **Bash VirtualBox Install**: A hassle-free way to install VirtualBox.
+- **Bash VirtualBox Installer**: A hassle-free way to install VirtualBox.
 
 More scripts are added regularly, so dive into the directory to explore them!
 
