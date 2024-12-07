@@ -6,7 +6,7 @@ The JSON Validation Script is a Python tool designed to validate the structure a
 
 ## **Overview**
 
-## Features
+## **Features**
 
 - Checks if the specified JSON file exists.
 - Attempts to parse the JSON file.
@@ -14,17 +14,17 @@ The JSON Validation Script is a Python tool designed to validate the structure a
 - Prints a message indicating whether the JSON file is valid or not.
 
 ## **Prerequisites**
-## Prerequisites
 
-The script requires no external libraries. It uses the built-in Python json module for parsing the JSON file.
 
-## Configuration
+- Configuration:
 
-Modify the following variable in the script:
+  - Modify the following variable in the script:
 
-file_path: Path to the JSON file you want to validate (e.g., "/path/to/your/operators.json").
+    - file_path: Path to the JSON file you want to validate (e.g., "/path/to/your/operators.json").
 
-## Usage
+- The script requires no external libraries. It uses the built-in Python json module for parsing the JSON file.
+
+## **Usage**
 
 1. Ensure you have Python 3.x installed on your system.
 2. Save the script as json_validator.py.
@@ -36,7 +36,7 @@ The script will attempt to validate the JSON file and print the result to the co
 
 
 
-## Notes
+## **Notes**
 
 - The script assumes the JSON file should contain a list of operators or other expected data. *Modify the validation logic in the script as needed to match your specific requirements.*
 - If the file does not exist, the script will print an error message and return False.
