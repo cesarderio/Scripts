@@ -55,7 +55,6 @@ The `Chrome Initialization` bash script facilitates the automated process of ins
 - Error messages if any step fails (e.g., "Failed to add Google Chrome repository").
 - If GNOME is detected, a message confirming that Google Chrome was added to the GNOME favorites.
 
-
 ## **Compatibility**
 
 The script contains built-in checks after crucial steps. In case of any errors during these stages, the script will notify the user and exit to prevent potential subsequent issues.
@@ -69,7 +68,31 @@ The script contains built-in checks after crucial steps. In case of any errors d
 
 ## **Contribution**
 
-Feel free to contribute, open issues, or suggest improvements. Collaboration is always appreciated!
+Your contributions can make these scripts even better:
+
+1. Fork the repository.
+1. Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Python directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
 ## **Author**
 

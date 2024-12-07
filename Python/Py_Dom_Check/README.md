@@ -1,63 +1,186 @@
 # Domain Analyzer
 
 `Domain Analyzer` is a Python script developed to probe domain details using a variety of common tools like `whois`, `dig`, `host`, and `nslookup`. The results from each tool are captured and stored in a file named `fetchDom.txt`. For users on Linux or macOS, the script will also attempt to open the results file using the system's default text viewer.
-<!--
-## **Overview**
-# Features
-## **Prerequisites**
-# Usage
-# Script Workflow
-# Output
-# Compatibility & Error Handling
-# Notes
-# Contribution
-# Author
-# Date of Latest Revision
-# License
--->
+
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
 
 ## **Overview**
+
+The Domain Analyzer script provides a convenient way to gather detailed information about a domain using various command-line tools. Whether you are troubleshooting, performing reconnaissance, or verifying DNS records, this script simplifies the process by consolidating outputs into a single file.
 
 ## Features
 
-- Checks for the presence of required tools (`whois`, `dig`, `host`, `nslookup`).
-- Captures domain details using the aforementioned tools.
-- Saves the results in a formatted manner to `fetchDom.txt`.
-- On Linux or macOS, the results file is automatically opened for quick viewing.
+- Tool Presence Verification:
+  - Checks for the availability of whois, dig, host, and nslookup on the system.
+
+- Domain Information Gathering:
+  - Executes the specified tools to retrieve domain-related information.
+
+- Output Management:
+  - Saves results in a structured format in the fetchDom.txt file.
+
+- Auto-Opening Results:
+  - For Linux or macOS users, automatically opens the results file in the system's default text editor.
 
 ## **Prerequisites**
-## Prerequisites
 
-The script relies on the following tools:
+Ensure the following requirements are met before running the script:
 
-- whois
-- dig
-- host
-- nslookup
+- Python 3.x installed on your system.
+- Tools required for the script:
+  - whois
+  - dig
+  - host
+  - nslookup
 
-Ensure these tools are installed and accessible from your system's PATH.
+- All tools must be accessible through the system's PATH.
 
 ## Usage
 
-1. Ensure you have Python installed on your system.
-2. Save the script as `domain_analyzer.py`.
-3. Run the script using the command `python domain_analyzer.py`.
-4. Follow the on-screen prompt to input a domain name.
-5. Review the results in `fetchDom.txt` or the opened text viewer.
+1. Prepare the script:
+
+- Save the script as domain_analyzer.py.
+- Ensure it has execute permissions if needed:
+
+  ```bash
+  chmod +x domain_analyzer.py
+  ```
+
+1. Run the script:
+
+- Execute the script from the terminal:
+
+  ```bash
+  python domain_analyzer.py
+  ```
+
+1.Input domain:
+
+- Enter the domain name when prompted (e.g., example.com).
+
+1. Review results:
+
+- Check the output in the fetchDom.txt file.
+
+- On Linux/macOS, the results will automatically open in your text viewer if available.
 
 ## **Script Workflow**
 
+1. Check Dependencies:
+
+- Verifies that required tools (whois, dig, host, nslookup) are installed.
+
+1. Prompt for Input:
+
+- Requests the user to input a domain name.
+
+1. Execute Commands:
+
+- Runs each tool against the provided domain and captures the output.
+
+1. Save Results:
+
+- Outputs the aggregated results to fetchDom.txt.
+
+1. Auto-Open Results (Linux/macOS only):
+
+- Attempts to open the results in the system's default text editor.
+
 ## **Output**
+
+- Results are saved in fetchDom.txt.
+
+- Example output:
+
+  ```bashplaintext
+  WHOIS Data:
+  <whois data here>
+
+  DIG Data:
+  <dig output here>
+
+  HOST Data:
+  <host output here>
+
+  NSLOOKUP Data:
+  <nslookup output here>
+  ```
+
+- Any missing or incomplete data will be clearly noted.
 
 ## **Compatibility**
 
+- Operating Systems:
+  - Linux
+  - macOS
+  - Windows (limited functionality; does not support auto-opening results).
+
+- Error Handling:
+  - The script exits with an error message if:
+    - A required tool is missing.
+    - The provided domain name is invalid.
+    - An unexpected error occurs during execution.
+
 ## Notes
 
-- The script performs a check for the required tools before execution. If any tool is missing, the script will exit, prompting the user to install the missing tools.
-- If no domain name is provided, the script will exit.
-- The results file `fetchDom.txt` is overwritten on each run, so ensure to back up any previous results if needed.
+- Overwrite Warning:
+  - The fetchDom.txt file is overwritten each time the script runs. Back up the file if needed.
+
+- Tool Installation:
+  - Ensure required tools are installed. For example:
+    - On Ubuntu/Debian:
+
+      ```bash
+      sudo apt install whois dnsutils
+      ```
+
+    - On macOS:
+
+      ```bash
+      Use brew install.
+      ```
+
+- Customization:
+  - Modify the script to adjust the file path or add additional tools/commands as needed.
 
 ## **Contribution**
+
+Your contributions can make these scripts even better:
+
+1. Fork the repository.
+1. Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Python directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
 ## Author
 
@@ -65,8 +188,10 @@ Ensure these tools are installed and accessible from your system's PATH.
 
 ## Date of Latest Revision
 
-- 10/05/2023
+- 12/07/2024
 
-## License
+## **License**
 
-This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

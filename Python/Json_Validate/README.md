@@ -98,17 +98,42 @@ The JSON Validation Script ensures that a specified JSON file exists, can be par
 
 ## **Contribution**
 
+Your contributions can make these scripts even better:
+
+1. Fork the repository.
+1. Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Python directory.
+
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
-## Author
+## **Author**
 
 - **Raphael Chookagian**
 
-## Date of Latest Revision
+## **Date of Latest Revision**
 
 - 12/07/2024
 
-## License
+## **License**
 
-This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
 
+- This project is licensed under the MIT License. See the LICENSE file for details.
