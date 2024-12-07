@@ -90,7 +90,7 @@ Your contributions can make these scripts even better:
   git push origin my-awesome-feature
   ```
 
-1. Create a new Pull Request targeting the Python directory.
+1. Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
@@ -104,4 +104,6 @@ Contributions are welcome! Feel free to open issues, suggest enhancements, or su
 
 ## **License**
 
-This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

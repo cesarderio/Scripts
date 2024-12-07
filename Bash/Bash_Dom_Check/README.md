@@ -1,52 +1,194 @@
 # Domain Analyzer
 
-Author: **Raphael Chookagian**
-Date of latest revision: **10/05/2023**
+This script is designed to retrieve and display information about the given domain.
 
-## Overview
+## **Table of Contents**
 
-Domain Analyzer is a Bash script designed to retrieve and display comprehensive information about a specified domain. It integrates with common domain lookup tools such as `whois`, `dig`, `host`, and `nslookup`.
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
 
-## Features
+## **Overview**
 
-- **Whois Lookup**: Get domain registration and ownership details.
-- **Dig Lookup**: Retrieve DNS records associated with the domain.
-- **Host Lookup**: Obtain domain's IP address and vice versa.
-- **NSLookup**: Query domain's DNS server for domain name or IP address mapping.
+The Domain Analyzer script integrates with widely used domain lookup tools to gather comprehensive details about a given domain. It can retrieve registration data, DNS records, and IP address mappings. This tool is ideal for developers, IT professionals, or anyone needing quick insights into domain properties.
 
-## Usage
+## **Features**
 
-1. Ensure that you have `whois`, `dig`, `host`, and `nslookup` installed on your system.
-2. Run the script:
+- **Whois Lookup**:
+  - Get domain registration and ownership details.
 
-   ```bash
-   ./domain_analyzer.sh
-   ```
+- **Dig Lookup**:
+  - Retrieve DNS records associated with the domain.
 
-3. When prompted, enter the domain name you wish to analyze.
+- **Host Lookup**:
+  - Obtain domain's IP address and vice versa.
 
-## Output
+- **NSLookup**:
+  - Query domain's DNS server for domain name or IP address mapping.
 
-The script displays the domain's information in the terminal and simultaneously saves it to a file named `fetchDom.txt`.
+## **Prerequisites**
 
-You can view the results using your preferred text editor or the file will open automatically, depending on your OS.
+Ensure the following requirements are met:
 
-## Requirements
+1. Shell Environment:
 
-- Bash shell
-- The following tools must be installed:
+- Bash shell must be available.
+
+1. Required Tools:
+
+- The script requires these utilities:
   - whois
   - dig
   - host
   - nslookup
 
-## Compatibility
+1. Installation Instructions:
 
-The script has been tested and is known to work on:
+- For Ubuntu or Debian-based systems:
 
-- Linux distributions with GNOME (using `xdg-open` to open files)
-- macOS (using the `open` command)
+  ```bash
+  sudo apt update
+  sudo apt install whois dnsutils bind9-host
+  ```
 
-## Contribution
+- For macOS:
+  - The necessary utilities are included with macOS.
 
-To contribute to this project, please fork the repository and submit a pull request.
+## **Usage**
+
+1. Download and Prepare the Script:
+
+- Save the domain_analyzer.sh file to your system.
+- Make it executable:
+
+  ```bash
+  chmod +x domain_analyzer.sh
+  ```
+
+1. Run the Script:
+
+- Execute the script in the terminal:
+
+  ```bash
+  ./domain_analyzer.sh
+  ```
+
+1. Enter Domain:
+
+- When prompted, input the domain name you wish to analyze (e.g., example.com).
+
+## **Script Workflow**
+
+1. Input Validation:
+
+- Checks if a valid domain name is entered.
+
+1. Tool Integration:
+
+- Executes whois, dig, host, and nslookup commands.
+
+1. Output Consolidation:
+
+- Saves the combined results to fetchDom.txt.
+
+1. File Display:
+
+-Opens fetchDom.txt using the appropriate command for the user's OS.
+
+## **Output**
+
+The script provides detailed domain information, including:
+
+- Whois Data: Registration, owner, and expiration details.
+
+- DNS Records: A, MX, NS, and other records.
+
+- IP Mapping: Both forward and reverse lookups.
+
+Example Output:
+
+  ```yaml
+  Whois Information:
+    Domain Name: EXAMPLE.COM
+    Registrar: Example Registrar
+    Creation Date: 1995-01-01
+    Expiration Date: 2025-01-01
+
+  DNS Records:
+    A Record: 192.0.2.1
+    MX Record: mail.example.com
+
+  Host Information:
+    Domain resolves to: 192.0.2.1
+
+  NSLookup Results:
+    Name Server: ns1.example.com
+  ```
+
+The output is saved to fetchDom.txt and opened automatically.
+
+## **Compatibility**
+
+The script has been tested on:
+
+- Linux:
+  -Compatible with most distributions (e.g., Ubuntu, Debian, Fedora).
+
+- macOS:
+  -Fully functional using native tools (whois, dig, etc.).
+
+
+## **Notes**
+
+- Ensure internet connectivity when running the script to fetch accurate domain information.
+
+- Modify the script as needed if additional domain tools or queries are required.
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+1. Fork the repository.
+1. Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Bash directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

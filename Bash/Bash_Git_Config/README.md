@@ -15,7 +15,7 @@ This README provides detailed information about the Git_Config.sh bash script fo
 - [Contribution](#contribution)
 - [Author](#author)
 
-## Overview
+## **Overview**
 
 The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu systems. It ensures that Git is installed and up-to-date, and guides the user through configuring Git with a username and email for version control.
 <!-- The `Git_Config.sh` bash script automates the following processes:
@@ -25,7 +25,7 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 3. If Git is not present, it installs Git using the `apt` package manager.
 4. Configures Git with a username and email based on user input. -->
 
-## Features
+## **Features**
 
 - Automated Git Installation:
   - Checks if Git is installed on the system.
@@ -39,7 +39,7 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 - Error Handling:
   - Provides meaningful messages for issues such as missing privileges or incompatible environments.
 
-## Prerequisites
+## **Prerequisites**
 
 - System Requirements:
   - Ubuntu or an Ubuntu-based distribution.
@@ -48,7 +48,7 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 - Tools:
   - The apt package manager (used for installing/updating Git).
 
-## Usage
+## **Usage**
 
 1. Download the script:
 
@@ -86,7 +86,7 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
   git config --global user.email
   ```
 
-## Script Workflow
+## **Script Workflow**
 
 1. Check for Git:
 
@@ -134,7 +134,6 @@ Executes:
     email = youremail@example.com
   ```
 
-
 ## **Compatibility**
 
 - Supported Systems:
@@ -144,7 +143,7 @@ Executes:
 - Limitations:
   - The script relies on the apt package manager. It may not work on systems using other package managers like yum or dnf.
 
-## Notes
+## **Notes**
 
 - Superuser Privileges:
   - The script uses sudo for installing or updating Git. Ensure you have the necessary permissions.
@@ -193,4 +192,6 @@ Contributions are welcome! Feel free to open issues, suggest enhancements, or su
 
 ## License
 
-This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

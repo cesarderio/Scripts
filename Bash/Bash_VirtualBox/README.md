@@ -38,3 +38,46 @@ The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the in
 
 - Ensure that you have internet connectivity when running the script, as it needs to download packages.
 - The script currently installs the VirtualBox extension pack for version 6.1.38. If you need a different version, you'll need to modify the script accordingly.
+
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+1. Fork the repository.
+1. Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Bash directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

@@ -53,19 +53,44 @@ More scripts are added regularly, so dive into the directory to explore them!
 
 *> Note: Ensure you have the necessary permissions and understand the implications of a script before executing. Some scripts might require `sudo`.*
 
-## Contributing
+## **Contribution**
 
 Your contributions can make these scripts even better:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b my-awesome-feature`).
-3. Make your invaluable changes.
-4. Commit your changes (`git commit -am 'Added some amazing features'`).
-5. Push to the branch (`git push origin my-awesome-feature`).
-6. Create a new Pull Request targeting the `Linux_Bash` directory.
+1. Create a new branch:
 
-Feedback, bug reports, and pull requests are always welcome on GitHub.
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
 
----
+1. Make your invaluable changes.
+1. Commit your changes:
 
-Cheers to efficient scripting on Linux! 🚀
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Bash directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.
