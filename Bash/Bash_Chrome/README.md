@@ -5,15 +5,26 @@ This README provides an overview and instructions for a bash script tailored to 
 ## **Table of Contents**
 
 - [Overview](#overview)
+- [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
 - [Script Workflow](#script-workflow)
-- [Error Handling](#error-handling)
-- [Contributions](#contributions)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
 
 ## **Overview**
 
 The `Chrome Initialization` bash script facilitates the automated process of installing Google Chrome on Linux, setting it as the default browser, and adding it to GNOME favorites if applicable.
+
+## **Features**
+
+- Automates Google Chrome installation.
+- Configures Google Chrome as the default web browser.
+- Adds Google Chrome to GNOME favorites if GNOME is detected.
+- Handles installation prerequisites like updating repositories and adding necessary keys.
 
 ## **Prerequisites**
 
@@ -38,10 +49,36 @@ The `Chrome Initialization` bash script facilitates the automated process of ins
 4. **Default Browser Configuration**: Configures Google Chrome as the system's default web browser.
 5. **GNOME Favorites Addition**: If GNOME is detected, the script will add Google Chrome to the favorites.
 
-## **Error Handling**
+## **Output**
+
+- Success messages indicating the script's progress (e.g., "Google Chrome installed successfully").
+- Error messages if any step fails (e.g., "Failed to add Google Chrome repository").
+- If GNOME is detected, a message confirming that Google Chrome was added to the GNOME favorites.
+
+
+## **Compatibility**
 
 The script contains built-in checks after crucial steps. In case of any errors during these stages, the script will notify the user and exit to prevent potential subsequent issues.
 
-## **Contributions**
+## **Notes**
+
+- The script assumes the user is using a 64-bit Linux system.
+- GNOME desktop environment is required for the "Add to GNOME favorites" step.
+- If you're using a non-Debian-based Linux distribution, modifications might be necessary to accommodate package managers.
+
+
+## **Contribution**
 
 Feel free to contribute, open issues, or suggest improvements. Collaboration is always appreciated!
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
