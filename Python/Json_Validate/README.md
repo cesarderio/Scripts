@@ -4,7 +4,20 @@ The JSON Validation Script is a Python tool designed to validate the structure a
 
 ## **Table of Contents**
 
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
+
 ## **Overview**
+
+The JSON Validation Script ensures that a specified JSON file exists, can be parsed correctly, and contains the expected data structure.
 
 ## **Features**
 
@@ -15,32 +28,77 @@ The JSON Validation Script is a Python tool designed to validate the structure a
 
 ## **Prerequisites**
 
-
+- Python 3.x installed on your system.
+- No external libraries required. The script uses Python's built-in `json` module.
 - Configuration:
-
   - Modify the following variable in the script:
-
-    - file_path: Path to the JSON file you want to validate (e.g., "/path/to/your/operators.json").
-
-- The script requires no external libraries. It uses the built-in Python json module for parsing the JSON file.
+    - `file_path`: Path to the JSON file you want to validate (e.g., "/path/to/your/operators.json").
 
 ## **Usage**
 
-1. Ensure you have Python 3.x installed on your system.
-2. Save the script as json_validator.py.
-3.Run the script using the command:
-bash
-Copy code
-python validate.py
-The script will attempt to validate the JSON file and print the result to the console.
+1. Ensure Python 3.x is installed on your system.
+2. Save the script as `json_validator.py`.
+3. Run the script using the command:
+
+    ```bash
+   python json_validator.py
+    ```
+
+## **Script Workflow**
+
+1. File Existence Check:
+
+- The script checks if the specified JSON file exists at the provided path.
+
+1. Parse JSON:
+
+- Attempts to load the content of the file as a JSON object.
+
+1. Validate Data Structure:
+
+- Confirms whether the JSON file contains the expected fields or structure (e.g., a list of operators or other required fields).
+
+1. Output Results:
+
+- Prints the validation status (valid or invalid) to the console.
 
 
+## **Output**
+
+- If the JSON file is valid, the script prints:
+
+    ```bash
+    JSON file is valid.
+    ```
+
+- If the file does not exist, the script prints:
+
+    ```bash
+    Error: JSON file does not exist.
+    ```
+
+- If the file cannot be parsed as valid JSON, it prints:
+
+    ```bash
+    Error: Failed to decode JSON.
+    ```
+
+## **Compatibility**
+
+- Compatible with any system running Python 3.x.
+- No external dependencies are required, as the script uses Python's built-in libraries.
 
 ## **Notes**
 
-- The script assumes the JSON file should contain a list of operators or other expected data. *Modify the validation logic in the script as needed to match your specific requirements.*
-- If the file does not exist, the script will print an error message and return False.
-- If the JSON file cannot be parsed, the script will catch the error and notify you.
+- The script assumes that the JSON file should contain a specific structure, such as a list of operators. If your use case differs, you may need to modify the validation logic in the script to meet your requirements.
+- The script exits with an error message if:
+  - The file does not exist.
+  - The file cannot be parsed as valid JSON.
+  - The data structure is invalid.
+
+## **Contribution**
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
 ## Author
 

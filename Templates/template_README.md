@@ -73,16 +73,17 @@
 
 <!--TITLE
  <!-- describe what the readme is for, what the script is. -->
-<!--# Overview
+<!--
+## **Overview**
 # Features
-# Prerequisites (or requirements? dependencies?)
+## **Prerequisites**
 # Usage
 # Script Workflow
 # Output
-# Compatibility  (or Error Handling?)
+# Compatibility & Error Handling
 # Notes
 # Contribution
 # Author
-# Date of latest revision
+# Date of Latest Revision
 # License
 -->
