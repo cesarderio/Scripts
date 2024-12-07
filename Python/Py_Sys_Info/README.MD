@@ -130,7 +130,7 @@ The script provides detailed information about:
 
 Example output:
 
-  ```bash
+  ```yaml
   Machine Name: my-laptop
   CPU: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
   RAM: 16 GB
