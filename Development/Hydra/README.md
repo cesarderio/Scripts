@@ -89,25 +89,25 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 
 1. User Input:
 
-Prompts the user for network scanning and brute-force attack options.
-Accepts input for scan types, IP ranges, and service details.
+- Prompts the user for network scanning and brute-force attack options.
+- Accepts input for scan types, IP ranges, and service details.
 
-1. Network Scanning:
+2. Network Scanning:
 
 - Executes nmap with user-specified parameters.
 - Parses and displays the scan results, highlighting open ports and services.
 
-2. Brute-Force Attack:
+3. Brute-Force Attack:
 
 - Executes hydra against the specified service using the provided username and password lists.
 - Logs the results of the brute-force attempt, including successful logins (if any).
 
-3. Error Handling:
+4. Error Handling:
 
 - Checks for the availability of required tools (nmap and hydra) before execution.
 - Provides clear error messages for missing tools, invalid inputs, or unsupported options.
 
-4. Completion:
+5. Completion:
 
 - Displays a summary of the scan and attack results.
 - Cleans up any temporary files created during execution.
