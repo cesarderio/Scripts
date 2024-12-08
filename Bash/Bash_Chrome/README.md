@@ -2,6 +2,8 @@
 
 This README provides an overview and instructions for a bash script tailored to manage the installation and configuration of Google Chrome on Linux systems.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@ This README provides an overview and instructions for a bash script tailored to 
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The `Chrome Initialization` bash script facilitates the automated process of installing Google Chrome on Linux, setting it as the default browser, and adding it to GNOME favorites if applicable.
+
+<br>
 
 ## **Features**
 
@@ -26,11 +32,15 @@ The `Chrome Initialization` bash script facilitates the automated process of ins
 - Adds Google Chrome to GNOME favorites if GNOME is detected.
 - Handles installation prerequisites like updating repositories and adding necessary keys.
 
+<br>
+
 ## **Prerequisites**
 
 - A Linux machine.
 - Sufficient privileges to execute `sudo` commands.
 - Connectivity to the internet to fetch the packages and signing keys.
+
+<br>
 
 ## **Usage**
 
@@ -38,6 +48,8 @@ The `Chrome Initialization` bash script facilitates the automated process of ins
 2. Navigate to the directory containing the script.
 3. Ensure the script has execute permissions: `chmod +x ChromeInit.sh`.
 4. Run the script: `./ChromeInit.sh`.
+
+<br>
 
 ## **Script Workflow**
 
@@ -49,15 +61,21 @@ The `Chrome Initialization` bash script facilitates the automated process of ins
 4. **Default Browser Configuration**: Configures Google Chrome as the system's default web browser.
 5. **GNOME Favorites Addition**: If GNOME is detected, the script will add Google Chrome to the favorites.
 
+<br>
+
 ## **Output**
 
 - Success messages indicating the script's progress (e.g., "Google Chrome installed successfully").
 - Error messages if any step fails (e.g., "Failed to add Google Chrome repository").
 - If GNOME is detected, a message confirming that Google Chrome was added to the GNOME favorites.
 
+<br>
+
 ## **Compatibility**
 
 The script contains built-in checks after crucial steps. In case of any errors during these stages, the script will notify the user and exit to prevent potential subsequent issues.
+
+<br>
 
 ## **Notes**
 
@@ -65,6 +83,7 @@ The script contains built-in checks after crucial steps. In case of any errors d
 - GNOME desktop environment is required for the "Add to GNOME favorites" step.
 - If you're using a non-Debian-based Linux distribution, modifications might be necessary to accommodate package managers.
 
+<br>
 
 ## **Contribution**
 
@@ -96,13 +115,19 @@ Your contributions can make these scripts even better:
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
+<br>
+
 ## **Author**
 
 - **Raphael Chookagian**
 
+<br>
+
 ## **Date of Latest Revision**
 
 - 12/07/2024
+
+<br>
 
 ## **License**
 
