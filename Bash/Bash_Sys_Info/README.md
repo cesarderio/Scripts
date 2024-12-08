@@ -42,7 +42,6 @@ The script provides detailed information about the following system components:
   sudo yum install lshw   # On RHEL-based systems
   ```
 
-
 - Sufficient permissions to execute sudo commands.
 
 - A Linux-based system.
@@ -57,7 +56,7 @@ The script provides detailed information about the following system components:
 3. Ensure the script has execute permissions:
 
     ```bash
-    chmod +x SystemInfo.sh
+    sudo chmod +x SystemInfo.sh
     ```
 
 4. Run the script with:
@@ -68,12 +67,34 @@ The script provides detailed information about the following system components:
 
 ## **Script Workflow**
 
+- The script uses `lshw` to gather detailed hardware information.
+
+- It extracts relevant details about the System Name, CPU, RAM, Display Adapter, and Network Adapter.
+
+- The gathered data is formatted and displayed in a user-friendly format on the terminal.
+
 ## **Output**
+
+The output will be displayed in the terminal and will include key system information like:
+
+- System name (e.g., hostname).
+- CPU details: model, number of cores, speed.
+- RAM usage: total, used, free memory.
+- Display Adapter information: graphics hardware details.
+- Network Adapter details: Ethernet or Wi-Fi interface details.
 
 ## **Compatibility**
 
+- The script is compatible with most Linux-based systems (e.g., Ubuntu, Debian, Fedora).
+- It requires the lshw tool, which is available on most Linux distributions.
+- The script has been tested on Ubuntu but should work on other distributions with lshw installed.
+
+
 ## Notes
 
+- `lshw` requires `sudo` permissions to fetch detailed hardware information, so the script will prompt for `sudo` access.
+- The script provides a clean, simple overview of your system's hardware.
+- Always ensure the script has been reviewed before running it on production systems to avoid unintentional issues.
 
 
 ## **Contribution**
