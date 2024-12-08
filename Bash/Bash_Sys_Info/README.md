@@ -17,7 +17,7 @@ This README provides comprehensive details about the `SystemInfo.sh` bash script
 
 ## **Overview**
 
-The `SystemInfo.sh` bash script is designed to fetch and display key details about the system's name, CPU, RAM, display adapter, and network adapter.
+The `SystemInfo.sh` bash script is designed to fetch and display key details about the system's name, CPU, RAM, display adapter, and network adapter using the `lshw` tool.
 
 ## **Features**
 
@@ -30,6 +30,20 @@ The script provides detailed information about the following system components:
 - **Network Adapter**: Gathers details about the system's network interfaces.
 
 ## **Prerequisites**
+
+- A Linux-based system (Ubuntu, Fedora, Debian, etc.).
+
+- Bash shell (default on most Linux systems).
+
+- `lshw` tool installed. You can install it using your package manager:
+
+  ```bash
+  sudo apt install lshw   # On Debian-based systems
+  sudo yum install lshw   # On RHEL-based systems
+  ```
+
+
+- Sufficient permissions to execute sudo commands.
 
 - A Linux-based system.
 - Bash shell.

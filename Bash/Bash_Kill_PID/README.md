@@ -2,7 +2,6 @@
 
 This Bash script provides an interactive way to manage running processes. It allows users to view all running processes, specify a Process ID (PID), and terminate the associated process.
 
-
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -19,8 +18,6 @@ This Bash script provides an interactive way to manage running processes. It all
 ## Overview
 
 The KillPID.sh script simplifies process management by automating common tasks such as listing running processes, prompting the user for a PID, and safely terminating the process. It provides a looped interface, allowing users to manage multiple processes in a single session.
-
-
 
 ## **Features**
 
@@ -50,6 +47,7 @@ The KillPID.sh script simplifies process management by automating common tasks s
 
 - Save the script as KillPID.sh.
 - Make it executable:
+
   ```bash
   chmod +x KillPID.sh
   ```
