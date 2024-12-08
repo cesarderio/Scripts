@@ -1,4 +1,4 @@
-# Linux Bash Scripts Directory 🖥️🐧
+# Linux Bash Scripts Directory 🐧🖥️
 
 A collection of bash scripts tailored to simplify, automate, and enhance operations on Linux systems.
 
