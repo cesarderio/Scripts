@@ -42,3 +42,47 @@ The provided PowerShell script performs the following actions:
 - Ensure you have administrative privileges before running this script.
 - The script may need to change the execution policy to install Chocolatey. Always be aware of the security implications associated with altering the execution policy. Specifically, the script uses `Set-ExecutionPolicy Bypass` to temporarily allow the Chocolatey installation script to run. After installation, consider setting your execution policy back to its original setting.
 - Always make sure to download software from trusted sources. Chocolatey and Git are reputable, but always be vigilant.
+
+
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+- Fork the repository.
+- Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Windows directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

@@ -53,10 +53,44 @@ Set-ExecutionPolicy RemoteSigned
 
 Always exercise caution when adjusting execution policies and only run scripts from trusted sources.
 
-## License
+## **Contribution**
 
-This script is provided as-is without any warranties. Use at your own discretion.
+Your contributions can make these scripts even better:
 
----
+- Fork the repository.
+- Create a new branch:
 
-Happy analyzing!
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Windows directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

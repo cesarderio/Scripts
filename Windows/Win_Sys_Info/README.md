@@ -37,3 +37,46 @@ This script uses PowerShell to query and display details about the system's host
 ## Note
 
 The script uses the `Get-WmiObject` cmdlet from PowerShell to fetch various system details. This cmdlet is natively supported on Windows platforms, ensuring you can run the script without any additional installations.
+
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+- Fork the repository.
+- Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Windows directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

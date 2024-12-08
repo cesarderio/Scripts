@@ -34,3 +34,46 @@ This PowerShell script is designed to automate the process of downloading, insta
 ## Disclaimer
 
 Always test scripts in a safe, isolated environment before deploying them in a production setting. The author is not responsible for any issues or damages that may arise from using the script.
+
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+- Fork the repository.
+- Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Windows directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

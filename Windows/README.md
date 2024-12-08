@@ -9,7 +9,7 @@ A curated collection of PowerShell scripts tailored for operations on Windows sy
 - [Overview](#overview)
 - [Highlighted Scripts](#highlighted-scripts)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contribution](#contribution)
 
 ## Overview
 
@@ -50,17 +50,47 @@ Regular additions are made, so make sure to explore the directory for other nift
 
 *> Note: Ensure that your execution policies allow the running of PowerShell scripts and that you understand the implications of a script before execution. Some scripts may require elevated permissions (`Run as Administrator`).*
 
-## Contributing
+## **Contribution**
 
-Power up the Windows collection with your contributions:
+Your contributions can make these scripts even better:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b my-powershell-feature`).
-3. Commit your updates (`git commit -am 'Added some PowerShell wonders'`).
-4. Push to your branch (`git push origin my-powershell-feature`).
-5. Create a new Pull Request targeting the `Windows` directory.
+- Fork the repository.
+- Create a new branch:
 
-Feedback, suggestions, bug reports, and pull requests are always welcome on GitHub.
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Windows directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 

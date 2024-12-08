@@ -20,7 +20,7 @@ A collection of powerful scripts and codes tailored for web development and cybe
 - [Directories](#directories)
 - [Features](#features)
 - [Installation & Usage](#installation--usage)
-- [Contributing](#contributing)
+- [Contribution](#contribution)
 - [License](#license)
 
 ## Introduction
@@ -95,7 +95,7 @@ Your contributions can make these scripts even better:
   git push origin my-awesome-feature
   ```
 
-- Create a new Pull Request targeting the <Name> directory.
+- Create a new Pull Request targeting the `Name` directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 
@@ -112,4 +112,3 @@ Contributions are welcome! Feel free to open issues, suggest enhancements, or su
 - This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
 
 - This project is licensed under the MIT License. See the LICENSE file for details.
-

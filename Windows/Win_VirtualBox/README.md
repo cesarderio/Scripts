@@ -34,6 +34,49 @@ The `Win_VBox_Install` script, written in PowerShell, automates the process of i
 - If a different version of the VirtualBox extension pack is required, modifications to the script will be needed.
 - The script adjusts the execution policy temporarily to install Chocolatey; it's restored afterward.
 
----
 
-*As always, be careful when running scripts, especially those that modify the system or adjust security settings. Review the script and ensure you're comfortable with its actions before executing.*
+
+
+
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+- Fork the repository.
+- Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Windows directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.
