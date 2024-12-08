@@ -1,54 +1,192 @@
 # Network Scanning and Brute-Force Attack Script
 
-This script is designed for educational purposes in the field of network security and ethical hacking. It integrates functionality for both network scanning using `nmap` and brute-force attacks using `hydra`, allowing users in a controlled environment to practice and understand these techniques.
+## **Warning**
 
-## Features
+This script is intended strictly for educational purposes in a controlled environment in the fields of network security and ethical hacking. Unauthorized scanning or attacks on networks or systems is illegal and unethical. It integrates functionality for both network scanning using `nmap` and brute-force attacks using `hydra`, allowing users in a controlled environment to practice and understand these techniques.
 
-- **Network Scanning**: Scan a specified IP range using `nmap`.
-- **Brute-Force Attack**: Perform a brute-force attack on a specified target using `hydra`.
-- **Flexible List Selection**: Choose between predefined or custom username/password lists for the brute-force attack.
+## **Table of Contents**
 
-## Prerequisites
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
 
-- Kali Linux or a similar environment with `bash`.
-- `nmap` and `hydra` installed.
-- Access to a controlled network environment for ethical testing.
+## **Overview**
 
-## Usage
+The Network Scanning and Brute-Force Attack Script combines the functionalities of `nmap` and `hydra` into one streamlined tool. It is designed to educate users on identifying network vulnerabilities through scanning and password auditing, offering an interactive, modular approach. This tool is ideal for security professionals and students learning about ethical hacking in controlled environments.
+
+## **Features**
+
+- **Network Scanning**:
+
+  - Uses `nmap` to perform a detailed scan of a specified IP range or subnet.
+  - Detects open ports and running services on the target machines.
+  -Provides options for different scanning types (e.g., fast scan, full scan).
+
+- **Brute-Force Attack**:
+
+  -Employs `hydra` to attempt password guessing attacks on a specified target and service (e.g., SSH, FTP).
+  -Supports both predefined and custom username/password lists.
+  -Allows targeting of specific ports and services.
+
+- **Interactive Prompts**:
+
+  - Guides users step-by-step through network scanning and brute-force attack options.
+  - Provides flexible inputs for customization.
+
+## **Prerequisites**
+
+- Operating System: Kali Linux or a similar security-focused distribution.
+
+- Installed Tools:
+  -`nmap`: For network scanning.
+  -`hydra`: For brute-force attacks.
+
+- Controlled Environment:
+  - Ensure you have explicit permission to scan and test the target network.
+
+## **Usage**
 
 1. **Download the Script**:
    - Save the script in a file, e.g., `network_brute_force_script.sh`.
 
-2. **Make the Script Executable**:
+1. **Make the Script Executable**:
 
    ```bash
-   chmod +x network_brute_force_script.sh
+   sudo chmod +x network_brute_force_script.sh
    ```
 
-3. **Run the Script**:
+1. **Run the Script**:
 
    ```bash
    ./network_brute_force_script.sh
    ```
 
-   Follow the interactive prompts to perform network scanning and/or a brute-force attack.
+1. Follow the Prompts:
 
-## Interactive Prompts
+- Choose to perform a network scan, a brute-force attack, or both.
+- Enter the required details such as IP ranges, target IPs, services, and file paths.
+
+### **Interactive Prompts**
 
 - **Network Scanning**:
-  - You will be asked if you want to perform network scanning.
-  - If yes, enter the desired IP range for scanning.
+  - Specify the IP range or CIDR block for the scan.
+  - Select the type of scan (e.g., quick scan, detailed scan, or aggressive scan).
 
 - **Brute-Force Attack**:
-  - You will be asked if you want to perform a brute-force attack.
-  - If yes, enter the IP of the target.
-  - Choose between using a predefined list or entering a custom list path for usernames and passwords.
-  - Specify the service for the brute-force attack (e.g., ssh, ftp).
+  - Provide the target IP address.
+  - Specify the service to attack (e.g., ssh, ftp).
+  - Choose between using predefined or custom username/password lists.
+  - Enter the paths for custom lists, if applicable.
 
-## Warning
+## **Script Workflow**
 
-This script is intended strictly for educational purposes in a controlled environment. Unauthorized scanning or attacks on networks or systems is illegal and unethical.
+1. User Input:
 
-## Contributing
+Prompts the user for network scanning and brute-force attack options.
+Accepts input for scan types, IP ranges, and service details.
 
-Feedback and contributions to improve this script are welcome. Please ensure that any modifications adhere to ethical guidelines and are intended for educational use.
+1. Network Scanning:
+
+- Executes nmap with user-specified parameters.
+- Parses and displays the scan results, highlighting open ports and services.
+
+1. Brute-Force Attack:
+
+- Executes hydra against the specified service using the provided username and password lists.
+- Logs the results of the brute-force attempt, including successful logins (if any).
+
+1. Error Handling:
+
+- Checks for the availability of required tools (nmap and hydra) before execution.
+- Provides clear error messages for missing tools, invalid inputs, or unsupported options.
+
+1. Completion:
+
+- Displays a summary of the scan and attack results.
+- Cleans up any temporary files created during execution.
+
+## **Output**
+
+- Network Scanning:
+  - Lists discovered hosts, open ports, and running services.
+  - Saves the results to a file (e.g., scan_results.txt).
+
+- Brute-Force Attack:
+
+  - Logs successful and failed login attempts.
+  - Saves the attack report to a file (e.g., brute_force_log.txt).
+
+- Error Logs:
+
+  - Displays error messages for issues such as invalid inputs or failed scans.
+
+## **Compatibility**
+
+- Supported Operating Systems:
+  - Kali Linux or other Linux distributions with bash.
+
+- Dependencies:
+  - Requires `nmap` and `hydra` to be installed.
+
+- Target Networks:
+  - Ensure the script is run only on networks where you have explicit permission.
+
+## **Notes**
+
+- Ethical Usage:
+  - This tool is intended solely for ethical purposes within controlled environments. Unauthorized use is illegal and unethical.
+
+- Root Privileges:
+  - The script requires root privileges for some operations, such as running nmap scans.
+
+- Custom Lists:
+  - Use secure methods to create or obtain username/password lists. Avoid using lists that contain sensitive or unauthorized data.
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
+
+1. Fork the repository.
+1. Create a new branch:
+
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Development directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

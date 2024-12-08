@@ -9,7 +9,7 @@ A collection of bash scripts tailored to simplify, automate, and enhance operati
 - [Overview](#overview)
 - [Highlighted Scripts](#highlighted-scripts)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contribution](#contribution)
 
 ## Overview
 

@@ -17,6 +17,8 @@ This script offers a seamless approach to setting up the lab kit PC required for
 
 ## **Overview**
 
+The `Ubuntu_Init.sh` script automates the setup process for the Code Fellows OPS Course Lab Kit PC, covering installation of essential software and configuration tasks.
+
 ## **Features**
 
 1. **System Update**: Prioritizes the system's health by ensuring all system packages are up-to-date.
@@ -31,22 +33,60 @@ This script offers a seamless approach to setting up the lab kit PC required for
 
 ## **Prerequisites**
 
-## **Usage
+- A Linux-based system, preferably Ubuntu.
+- Bash shell (default on most Linux systems).
+- Internet connection for downloading packages and dependencies.
+- Sudo access to execute the script with administrative privileges.
+
+## **Usage**
 
 1. **Download**: Secure the script onto your system.
-2. **Permission**: Bestow the script with execute permissions via `chmod +x Ubuntu_Init.sh`.
-3. **Execute**: Initiate the script with `./Ubuntu_Init.sh`.
+
+1. **Permission**: Bestow the script with execute permissions:
+
+  ```bash
+  chmod +x Ubuntu_Init.sh   # use `sudo` for permissions.
+  ```
+
+1. **Execute**: Initiate the script with:
+
+  ```bash
+  ./Ubuntu_Init.sh
+  ```
 
 > **Note**: Due to the nature of operations, the script may request `sudo` privileges, prompting users for their password.
 
 
 ## **Script Workflow**
 
+1. System Update: The script begins by updating system packages to ensure your system is current.
+
+1. Software Installation: It proceeds to install and configure necessary software, including SSH, XRDP, Git, Google Chrome, VirtualBox, and more.
+
+1. Configuration: The script configures each installed tool, such as setting Google Chrome as the default browser and customizing Gnome Tweaks.
+
+1. Finalization: Once all steps are completed, the system is fully configured for the Code Fellows OPS course environment.
+
 ## **Output**
+
+The script will output logs and status updates during the execution process. Users will see confirmation messages for each software installation and configuration step, along with any potential errors or warnings.
 
 ## **Compatibility**
 
+- The script is designed for Ubuntu and should work with most versions of Ubuntu and other Debian-based systems.
+
+- It requires sudo privileges for installation of some packages.
+
+- The script may not be fully compatible with non-Debian-based distributions (e.g., Fedora, Arch).
+
+
 ## **Notes**
+
+- Ensure that your system is connected to the internet, as the script will need to download several packages.
+
+- The script may take some time to complete, depending on the system’s performance and internet speed.
+
+- It’s recommended to run the script on a clean installation to avoid conflicts with pre-installed software.
 
 ## **Contribution**
 

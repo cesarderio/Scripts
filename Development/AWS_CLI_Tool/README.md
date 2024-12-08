@@ -4,7 +4,24 @@
 
 **AWS Management CLI Tool** is a powerful, user-friendly command-line utility designed to streamline your AWS resource management tasks. Instead of navigating through the AWS Console or writing custom scripts, use this tool to quickly view, manage, and monitor your cloud resources.
 
-## 🚀 Features
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
+
+## **Overview**
+
+The AWS Management CLI Tool simplifies the process of managing AWS services by providing an interactive command-line interface that enables users to perform a wide range of AWS tasks with minimal effort. From managing EC2 instances to reviewing security groups, this tool centralizes AWS service management into one utility.
+
+## **Features**
 
 - **Interactive Navigation**: Traverse seamlessly through multiple AWS service categories using a clear, structured menu.
 
@@ -18,7 +35,7 @@
 
 ## 🛠️ Getting Started
 
-### Requirements
+## **Prerequisites**
 
 - **Python 3.x**
 - **Boto3**: The AWS SDK for Python. Install it with pip:
@@ -82,17 +99,79 @@
 
 The tool provides basic error handling, ensuring that any AWS-related errors are displayed in a user-friendly manner. If you encounter issues not covered by the error handling, please check your AWS setup and credentials.
 
-## 📝 Feedback & Contributions
 
-We're always looking to improve and expand this tool. If you encounter issues, have feature requests, or want to contribute, please:
+## **Script Workflow**
+
+1. AWS SDK Initialization: Initializes Boto3 to interface with AWS services.
+
+1. Interactive Menu: Prompts the user with a menu of AWS service categories.
+
+1. Service Selection: Upon selecting a service, the script fetches and displays resource data based on the chosen option.
+
+1. Error Handling: If the script encounters any issues (e.g., missing credentials or permission errors), it will provide informative messages to guide troubleshooting.
+
+1. Exit: The user can exit the program at any time by selecting the quit option.
+
+## **Output**
+
+- Resource Lists: The script will list resources such as EC2 instances, S3 buckets, RDS instances, etc., based on user selection.
+
+- Error Messages: If there are issues (e.g., missing permissions), the script will display specific error messages to assist in diagnosing and resolving problems.
+
+- Interactive Prompts: The tool uses an interactive CLI interface to guide users through AWS resource management tasks.
+
+## **Compatibility**
+
+- Supported Systems: This script is compatible with systems running Python 3.x and Boto3.
+
+- Dependencies: Requires an active internet connection and AWS credentials configured.
+
+- AWS Region: The script uses the default AWS region set in your AWS credentials or environment variables.
+
+## **Notes**
+
+- AWS Permissions: Ensure the AWS user running this tool has sufficient permissions to list and manage the selected resources.
+
+- Environment Variables: AWS credentials can be configured via environment variables for ease of use, especially in automated environments.
+
+## **Contribution**
+
+Your contributions can make these scripts even better:
 
 1. Fork the repository.
-2. Create a new branch (`git checkout -b new-feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add a new feature'`).
-5. Push to the branch (`git push origin new-feature-branch`).
-6. Create a new Pull Request.
+1. Create a new branch:
 
-## License
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+1. Make your invaluable changes.
+1. Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+1. Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+1. Create a new Pull Request targeting the Development directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

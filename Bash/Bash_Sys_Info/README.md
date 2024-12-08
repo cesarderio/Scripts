@@ -89,13 +89,11 @@ The output will be displayed in the terminal and will include key system informa
 - It requires the lshw tool, which is available on most Linux distributions.
 - The script has been tested on Ubuntu but should work on other distributions with lshw installed.
 
-
 ## Notes
 
 - `lshw` requires `sudo` permissions to fetch detailed hardware information, so the script will prompt for `sudo` access.
 - The script provides a clean, simple overview of your system's hardware.
 - Always ensure the script has been reviewed before running it on production systems to avoid unintentional issues.
-
 
 ## **Contribution**
 

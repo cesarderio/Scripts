@@ -36,7 +36,6 @@ The `sys_update.sh` script automates the following tasks in a Linux environment:
 - A Linux-based system with `apt` package manager (Debian, Ubuntu, or derivatives).
 - Superuser privileges (for executing `sudo` commands within the script).
 
-
 ## **Usage**
 
 1. Open a terminal window.
@@ -58,6 +57,11 @@ The `sys_update.sh` script automates the following tasks in a Linux environment:
 - Users can refer to this log file for detailed information about each operation performed by the script.
 
 ## **Compatibility**
+
+The script has been tested on:
+
+- Linux:
+  -Compatible with most distributions (e.g., Ubuntu, Debian, Fedora).
 
 ## Notes
 
