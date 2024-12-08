@@ -86,21 +86,21 @@ Ensure the following requirements are met:
 
 ## **Script Workflow**
 
-1. Input Validation:
+- Input Validation:
 
-- Checks if a valid domain name is entered.
+  - Checks if a valid domain name is entered.
 
-1. Tool Integration:
+- Tool Integration:
 
-- Executes whois, dig, host, and nslookup commands.
+  - Executes whois, dig, host, and nslookup commands.
 
-1. Output Consolidation:
+- Output Consolidation:
 
-- Saves the combined results to fetchDom.txt.
+  - Saves the combined results to fetchDom.txt.
 
-1. File Display:
+- File Display:
 
--Opens fetchDom.txt using the appropriate command for the user's OS.
+  -Opens fetchDom.txt using the appropriate command for the user's OS.
 
 ## **Output**
 
@@ -155,27 +155,27 @@ The script has been tested on:
 
 Your contributions can make these scripts even better:
 
-1. Fork the repository.
-1. Create a new branch:
+- Fork the repository.
+- Create a new branch:
 
   ```bash
   git checkout -b my-awesome-feature
   ```
 
-1. Make your invaluable changes.
-1. Commit your changes:
+- Make your invaluable changes.
+- Commit your changes:
 
   ```bash
   git commit -am 'Added some amazing features'
   ```
 
-1. Push to the branch:
+- Push to the branch:
 
   ```bash
   git push origin my-awesome-feature
   ```
 
-1. Create a new Pull Request targeting the Bash directory.
+- Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 

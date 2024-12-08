@@ -136,27 +136,27 @@ The script outputs the following details:
 
 Your contributions can make these scripts even better:
 
-1. Fork the repository.
-1. Create a new branch:
+- Fork the repository.
+- Create a new branch:
 
   ```bash
   git checkout -b my-awesome-feature
   ```
 
-1. Make your invaluable changes.
-1. Commit your changes:
+- Make your invaluable changes.
+- Commit your changes:
 
   ```bash
   git commit -am 'Added some amazing features'
   ```
 
-1. Push to the branch:
+- Push to the branch:
 
   ```bash
   git push origin my-awesome-feature
   ```
 
-1. Create a new Pull Request targeting the Bash directory.
+- Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 

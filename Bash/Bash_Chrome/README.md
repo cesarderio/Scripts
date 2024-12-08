@@ -70,29 +70,29 @@ The script contains built-in checks after crucial steps. In case of any errors d
 
 Your contributions can make these scripts even better:
 
-1. Fork the repository.
+- Fork the repository.
 
-2. Create a new branch:
+- Create a new branch:
 
   ```bash
   git checkout -b my-awesome-feature
   ```
 
-3. Make your invaluable changes.
+- Make your invaluable changes.
 
-4. Commit your changes:
+- Commit your changes:
 
   ```bash
   git commit -am 'Added some amazing features'
   ```
 
-5. Push to the branch:
+- Push to the branch:
 
   ```bash
   git push origin my-awesome-feature
   ```
 
-6. Create a new Pull Request targeting the Bash directory.
+- Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
 

@@ -4,7 +4,7 @@
 
 ## **Table of Contents**
 
-<!-- - [Overview](#overview)
+- [Overview](#overview)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
@@ -13,7 +13,7 @@
 - [Compatibility](#compatibility)
 - [Notes](#notes)
 - [Contribution](#contribution)
-- [Author](#author) -->
+- [Author](#author)
 
 ## **Overview**
 
@@ -52,7 +52,7 @@
   - Examples of results if applicable.
 
 
-## **Compatibility & Error Handling**
+## **Compatibility**
 
 - Explains how errors are handled in the script (e.g., error messages, handling invalid inputs).
 - Includes system compatibility requirements (e.g., platforms or OS versions that the script is known to work with).
@@ -93,7 +93,7 @@
 # Usage
 # Script Workflow
 # Output
-# Compatibility & Error Handling
+# Compatibility
 # Notes
 # Contribution
 # Author

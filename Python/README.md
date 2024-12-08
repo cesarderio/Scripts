@@ -9,7 +9,7 @@ A collection of Python scripts tailored for various operations, mirroring the fu
 - [Overview](#overview)
 - [Highlighted Scripts](#highlighted-scripts)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contribution](#contribution)
 
 ## Overview
 
@@ -49,18 +49,47 @@ More scripts are continually being added, ensuring you have a Pythonic solution 
 
 *> Note: Ensure you're using the right Python version (`python3` might be required in some systems) and understand the script's functionality before executing.*
 
-## Contributing
+## **Contribution**
 
-Enhance the Pythonic power with your contributions:
+Your contributions can make these scripts even better:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b my-pythonic-feature`).
-3. Make your awesome changes.
-4. Commit your changes (`git commit -am 'Added some Python magic'`).
-5. Push to the branch (`git push origin my-pythonic-feature`).
-6. Create a new Pull Request targeting the `Python` directory.
+- Fork the repository.
+- Create a new branch:
 
-Feedback, bug reports, and pull requests are welcome on GitHub.
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
+
+- Make your invaluable changes.
+- Commit your changes:
+
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
+
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Python directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
