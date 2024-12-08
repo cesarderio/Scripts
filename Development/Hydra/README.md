@@ -53,25 +53,25 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 
 ## **Usage**
 
-1. **Download the Script**:
+- **Download the Script**:
    - Save the script in a file, e.g., `network_brute_force_script.sh`.
 
-1. **Make the Script Executable**:
+- **Make the Script Executable**:
 
    ```bash
    sudo chmod +x network_brute_force_script.sh
    ```
 
-1. **Run the Script**:
+- **Run the Script**:
 
    ```bash
    ./network_brute_force_script.sh
    ```
 
-1. Follow the Prompts:
+- Follow the Prompts:
 
-- Choose to perform a network scan, a brute-force attack, or both.
-- Enter the required details such as IP ranges, target IPs, services, and file paths.
+  - Choose to perform a network scan, a brute-force attack, or both.
+  - Enter the required details such as IP ranges, target IPs, services, and file paths.
 
 ### **Interactive Prompts**
 
@@ -97,17 +97,17 @@ Accepts input for scan types, IP ranges, and service details.
 - Executes nmap with user-specified parameters.
 - Parses and displays the scan results, highlighting open ports and services.
 
-1. Brute-Force Attack:
+2. Brute-Force Attack:
 
 - Executes hydra against the specified service using the provided username and password lists.
 - Logs the results of the brute-force attempt, including successful logins (if any).
 
-1. Error Handling:
+3. Error Handling:
 
 - Checks for the availability of required tools (nmap and hydra) before execution.
 - Provides clear error messages for missing tools, invalid inputs, or unsupported options.
 
-1. Completion:
+4. Completion:
 
 - Displays a summary of the scan and attack results.
 - Cleans up any temporary files created during execution.

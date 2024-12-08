@@ -19,10 +19,10 @@ This script is designed for efficiently updating, upgrading, and maintaining the
 
 The `sys_update.sh` script automates the following tasks in a Linux environment:
 
-1. Updates the package lists from repositories.
-2. Upgrades all the installed packages to their latest versions.
-3. Removes unnecessary packages (autoremove).
-4. Cleans up the local repository of retrieved package files.
+- Updates the package lists from repositories.
+- Upgrades all the installed packages to their latest versions.
+- Removes unnecessary packages (autoremove).
+- Cleans up the local repository of retrieved package files.
 
 ## **Features**
 

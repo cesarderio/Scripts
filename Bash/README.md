@@ -33,19 +33,19 @@ More scripts are added regularly, so dive into the directory to explore them!
 
 ## Usage
 
-1. **Clone the Repository** (If you haven't already):
+- **Clone the Repository** (If you haven't already):
 
    ```bash
    git clone https://github.com/cesarderio/Scripts.git
    ```
 
-2. **Navigate to the Linux Bash Scripts Directory**:
+- **Navigate to the Linux Bash Scripts Directory**:
 
    ```bash
    cd Scripts/Linux_Bash/
    ```
 
-3. **Run the Desired Script**:
+- **Run the Desired Script**:
 
    ```bash
    ./script_name.sh

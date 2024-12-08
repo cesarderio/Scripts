@@ -58,15 +58,15 @@ To enhance usability, the scripts ensure that VirtualBox is conveniently placed 
 
 ## **Script Workflow**
 
-1. Check for Interrupted `dpkg` Processes: The script checks for any interrupted package installations and attempts to fix them.
+- Check for Interrupted `dpkg` Processes: The script checks for any interrupted package installations and attempts to fix them.
 
-1. Terminate Running VirtualBox Processes: It terminates any ongoing VirtualBox processes, including virtual machines.
+- Terminate Running VirtualBox Processes: It terminates any ongoing VirtualBox processes, including virtual machines.
 
-1. Remove Existing VirtualBox Installations: Any pre-installed versions of VirtualBox are removed from the system.
+- Remove Existing VirtualBox Installations: Any pre-installed versions of VirtualBox are removed from the system.
 
-1. Install VirtualBox 7.0: The script installs the latest version of VirtualBox 7.0 from the repository.
+- Install VirtualBox 7.0: The script installs the latest version of VirtualBox 7.0 from the repository.
 
-1. Install Extension Pack: The corresponding extension pack for VirtualBox 7.0 is downloaded and installed.
+- Install Extension Pack: The corresponding extension pack for VirtualBox 7.0 is downloaded and installed.
 
 1. Clean Up: The script removes any temporary files used during the installation process.
 

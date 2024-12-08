@@ -56,16 +56,15 @@ The `Ubuntu_Init.sh` script automates the setup process for the Code Fellows OPS
 
 > **Note**: Due to the nature of operations, the script may request `sudo` privileges, prompting users for their password.
 
-
 ## **Script Workflow**
 
-1. System Update: The script begins by updating system packages to ensure your system is current.
+- System Update: The script begins by updating system packages to ensure your system is current.
 
-1. Software Installation: It proceeds to install and configure necessary software, including SSH, XRDP, Git, Google Chrome, VirtualBox, and more.
+- Software Installation: It proceeds to install and configure necessary software, including SSH, XRDP, Git, Google Chrome, VirtualBox, and more.
 
-1. Configuration: The script configures each installed tool, such as setting Google Chrome as the default browser and customizing Gnome Tweaks.
+- Configuration: The script configures each installed tool, such as setting Google Chrome as the default browser and customizing Gnome Tweaks.
 
-1. Finalization: Once all steps are completed, the system is fully configured for the Code Fellows OPS course environment.
+- Finalization: Once all steps are completed, the system is fully configured for the Code Fellows OPS course environment.
 
 ## **Output**
 
@@ -78,7 +77,6 @@ The script will output logs and status updates during the execution process. Use
 - It requires sudo privileges for installation of some packages.
 
 - The script may not be fully compatible with non-Debian-based distributions (e.g., Fedora, Arch).
-
 
 ## **Notes**
 
@@ -129,7 +127,6 @@ Contributions are welcome! Feel free to open issues, suggest enhancements, or su
 - This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
 
 - This project is licensed under the MIT License. See the LICENSE file for details.
-
 
 ## Credits
 

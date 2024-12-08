@@ -50,72 +50,71 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 
 ## **Usage**
 
-1. Download the script:
+- Download the script:
 
-- Save the script as Git_Config.sh in a directory of your choice.
+  - Save the script as Git_Config.sh in a directory of your choice.
 
-1. Set executable permissions:
+- Set executable permissions:
 
-- Open a terminal and run:
+  - Open a terminal and run:
 
-  ```bash
-  chmod +x Git_Config.sh
-  ```
+    ```bash
+    chmod +x Git_Config.sh
+    ```
 
-1. Run the script:
+- Run the script:
 
-- Confirm you are in the directory where the script is located.
-- Execute the script with:
+  - Confirm you are in the directory where the script is located.
+  - Execute the script with:
 
-  ```bash
-  ./Git_Config.sh
-  ```
+    ```bash
+    ./Git_Config.sh
+    ```
 
-1. Follow the prompts:
+- Follow the prompts:
 
-- If Git is already installed, decide whether to update or upgrade it.
-- If Git is not installed, the script will automatically install it.
-- Provide your Git username and email when prompted to configure Git globally.
+  - If Git is already installed, decide whether to update or upgrade it.
+  - If Git is not installed, the script will automatically install it.
+  - Provide your Git username and email when prompted to configure Git globally.
 
-1. Verify setup:
+- Verify setup:
 
-- After the script completes, run the following commands to verify your configuration:
+  - After the script completes, run the following commands to verify your configuration:
 
-  ```bash
-  git config --global user.name
-  git config --global user.email
-  ```
+    ```bash
+    git config --global user.name
+    git config --global user.email
+    ```
 
 ## **Script Workflow**
 
-1. Check for Git:
+- Check for Git:
 
-- Uses which git to determine if Git is installed.
-- If not installed, it executes:
+  - Uses which git to determine if Git is installed.
+  - If not installed, it executes:
 
-  ```bash
-  sudo apt update && sudo apt install git -y
-  ```
+    ```bash
+    sudo apt update && sudo apt install git -y
+    ```
 
-1. Update or Upgrade Git:
+- Update or Upgrade Git:
 
-- If Git is installed, the script offers options to:
-  -Update Git (refresh existing version).
-  - Upgrade Git (install a newer version, if available).
+  - If Git is installed, the script offers options to:
+    -Update Git (refresh existing version).
+    - Upgrade Git (install a newer version, if available).
 
-1. Global Configuration:
+- Global Configuration:
 
-- Prompts the user to enter their Git username and email.
-Executes:
+  - Prompts the user to enter their Git username and email.
 
-  ```bash
-  git config --global user.name "Your Name"
-  git config --global user.email "youremail@example.com"
-  ```
+    ```bash
+    git config --global user.name "Your Name"
+    git config --global user.email "youremail@example.com"
+    ```
 
-1. Confirmation:
+- Confirmation:
 
-- Displays a success message and suggests verifying the configuration.
+  - Displays a success message and suggests verifying the configuration.
 
 ## **Output**
 

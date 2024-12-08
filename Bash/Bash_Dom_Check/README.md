@@ -37,52 +37,52 @@ The Domain Analyzer script integrates with widely used domain lookup tools to ga
 
 Ensure the following requirements are met:
 
-1. Shell Environment:
+- Shell Environment:
 
-- Bash shell must be available.
+  - Bash shell must be available.
 
-1. Required Tools:
+- Required Tools:
 
-- The script requires these utilities:
-  - whois
-  - dig
-  - host
-  - nslookup
+  - The script requires these utilities:
+    - whois
+    - dig
+    - host
+    - nslookup
 
-1. Installation Instructions:
+- Installation Instructions:
 
-- For Ubuntu or Debian-based systems:
+  - For Ubuntu or Debian-based systems:
 
-  ```bash
-  sudo apt update
-  sudo apt install whois dnsutils bind9-host
-  ```
+    ```bash
+    sudo apt update
+    sudo apt install whois dnsutils bind9-host
+    ```
 
-- For macOS:
-  - The necessary utilities are included with macOS.
+  - For macOS:
+    - The necessary utilities are included with macOS.
 
 ## **Usage**
 
-1. Download and Prepare the Script:
+- Download and Prepare the Script:
 
-- Save the domain_analyzer.sh file to your system.
-- Make it executable:
+  - Save the domain_analyzer.sh file to your system.
+  - Make it executable:
 
-  ```bash
-  chmod +x domain_analyzer.sh
-  ```
+    ```bash
+    chmod +x domain_analyzer.sh
+    ```
 
-1. Run the Script:
+- Run the Script:
 
-- Execute the script in the terminal:
+  - Execute the script in the terminal:
 
-  ```bash
-  ./domain_analyzer.sh
-  ```
+    ```bash
+    ./domain_analyzer.sh
+    ```
 
-1. Enter Domain:
+- Enter Domain:
 
-- When prompted, input the domain name you wish to analyze (e.g., example.com).
+  - When prompted, input the domain name you wish to analyze (e.g., example.com).
 
 ## **Script Workflow**
 

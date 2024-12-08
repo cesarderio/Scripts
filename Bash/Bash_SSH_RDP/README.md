@@ -19,10 +19,10 @@ This script facilitates the installation and configuration of SSH and RDP (xrdp)
 
 The `SSH_RDP.sh` bash script simplifies the following processes:
 
-1. Installs SSH and XRDP if they are not already installed on the system.
-2. Configures XRDP for optimal performance with Ubuntu's GNOME desktop environment.
-3. Automatically enables XRDP to start on system boot.
-4. Configures GNOME to disable the screensaver lock and sets up the GNOME Terminal to launch on startup.
+- Installs SSH and XRDP if they are not already installed on the system.
+- Configures XRDP for optimal performance with Ubuntu's GNOME desktop environment.
+- Automatically enables XRDP to start on system boot.
+- Configures GNOME to disable the screensaver lock and sets up the GNOME Terminal to launch on startup.
 
 ## **Features**
 
@@ -39,49 +39,49 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
 
 ## **Usage**
 
-1. Open a terminal window.
+- Open a terminal window.
 
-1. Navigate to the directory where `SSH_RDP.sh` is located.
+- Navigate to the directory where `SSH_RDP.sh` is located.
 
-1. Give execute permissions to the script:
+- Give execute permissions to the script:
 
-  ```bash
-  chmod +x SSH_RDP.sh
-  ```
+    ```bash
+    chmod +x SSH_RDP.sh
+    ```
 
-1. Execute the script:
+- Execute the script:
 
-  ```bash
-  ./SSH_RDP.sh
-  ```
+    ```bash
+    ./SSH_RDP.sh
+    ```
 
-1.. The script will run through the installation and configuration process, providing feedback and prompts as necessary.
+- The script will run through the installation and configuration process, providing feedback and prompts as necessary.
 
 ## **Script Workflow**
 
-1. System Update:
+- System Update:
 
-- The script begins by updating the system packages and upgrading them if necessary.
+  - The script begins by updating the system packages and upgrading them if necessary.
 
-1. Dependency Check:
+- Dependency Check:
 
-- It then checks for the presence of SSH and XRDP, installing them if they are not found.
+  - It then checks for the presence of SSH and XRDP, installing them if they are not found.
 
-1. XRDP Configuration:
+- XRDP Configuration:
 
-- XRDP is configured to work seamlessly with Ubuntu's GNOME desktop environment.
+  - XRDP is configured to work seamlessly with Ubuntu's GNOME desktop environment.
 
-- The script sets up policy kit rules to enhance functionality and the user experience with XRDP.
+  - The script sets up policy kit rules to enhance functionality and the user experience with XRDP.
 
-1. GNOME Customization:
+- GNOME Customization:
 
-- Disables the screensaver lock to avoid interruptions in remote sessions.
-- Configures GNOME Terminal to launch automatically on startup.
+  - Disables the screensaver lock to avoid interruptions in remote sessions.
+  - Configures GNOME Terminal to launch automatically on startup.
 
-1. Finalization:
+- Finalization:
 
-- XRDP is enabled to start automatically on system boot.
-- The script provides a summary of the completed tasks.
+  - XRDP is enabled to start automatically on system boot.
+  - The script provides a summary of the completed tasks.
 
 ## **Output**
 
@@ -102,7 +102,6 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
 - It's recommended to review and understand the script before running it, especially in a production environment.
 - While this script is tailored for Ubuntu, some features might work on other Debian-based distributions, but full compatibility is not guaranteed.
 - Always back up important data before running scripts that make significant changes to your system.
-
 
 ## **Contribution**
 

@@ -27,32 +27,35 @@ The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the in
 
 ## **Prerequisites**
 
-1. **Operating System**: The script is designed to work on Linux systems with apt package management (like Ubuntu).
-2. **GNOME Shell**: For the functionality to add VirtualBox to the favorites, a GNOME shell environment is necessary.
-3. **sudo privileges**: The script requires sudo privileges to install packages and manage the system.
+- **Operating System**: The script is designed to work on Linux systems with apt package management (like Ubuntu).
+
+- **GNOME Shell**: For the functionality to add VirtualBox to the favorites, a GNOME shell environment is necessary.
+
+- **sudo privileges**: The script requires sudo privileges to install packages and manage the system.
 
 ## **Usage**
 
-1. Clone the repository or download the `VBox6_Install.sh` or `VBox7_Install.sh` script.
-2. Provide execution permissions:
+- Clone the repository or download the `VBox6_Install.sh` or `VBox7_Install.sh` script.
 
-   ```bash
-   chmod +x VBox_Install.sh
-   ```
+- Provide execution permissions:
 
-3. Execute the script:
+    ```bash
+    chmod +x VBox_Install.sh
+    ```
 
-   ```bash
-   ./VBox_Install.sh
-   ```
+- Execute the script:
+
+    ```bash
+    ./VBox_Install.sh
+    ```
 
 ## **Script Workflow**
 
-1. Install VirtualBox: The script installs the selected version of VirtualBox from the repository.
+- Install VirtualBox: The script installs the selected version of VirtualBox from the repository.
 
-1. Install Extension Pack: The corresponding extension pack (currently version 6.1.38) is downloaded and installed.
+- Install Extension Pack: The corresponding extension pack (currently version 6.1.38) is downloaded and installed.
 
-1. Add to GNOME Shell Favorites: VirtualBox is added to the GNOME shell favorites for easy access.
+- Add to GNOME Shell Favorites: VirtualBox is added to the GNOME shell favorites for easy access.
 
 ## **Output**
 

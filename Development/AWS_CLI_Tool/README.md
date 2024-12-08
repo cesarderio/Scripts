@@ -99,7 +99,6 @@ The AWS Management CLI Tool simplifies the process of managing AWS services by p
 
 The tool provides basic error handling, ensuring that any AWS-related errors are displayed in a user-friendly manner. If you encounter issues not covered by the error handling, please check your AWS setup and credentials.
 
-
 ## **Script Workflow**
 
 1. AWS SDK Initialization: Initializes Boto3 to interface with AWS services.

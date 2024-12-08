@@ -29,82 +29,82 @@ The KillPID.sh script simplifies process management by automating common tasks s
 
 ## Prerequisites
 
-1. A Linux-based system with Bash shell.
+- A Linux-based system with Bash shell.
 
-1. Basic Requirements:
+- Basic Requirements:
 
-- The ps command (included in most Linux distributions).
+  - The ps command (included in most Linux distributions).
 
-- Permissions to terminate processes (e.g., root or sudo privileges, if required).
+  - Permissions to terminate processes (e.g., root or sudo privileges, if required).
 
-1. User Knowledge:
+- User Knowledge:
 
-- Basic understanding of processes and PIDs.
+  - Basic understanding of processes and PIDs.
 
 ## **Usage**
 
-1. Preparation:
+- Preparation:
 
-- Save the script as KillPID.sh.
-- Make it executable:
+  - Save the script as KillPID.sh.
+  - Make it executable:
 
-  ```bash
-  chmod +x KillPID.sh
-  ```
+    ```bash
+    chmod +x KillPID.sh
+    ```
 
-1. Running the Script:
+- Running the Script:
 
-- Open a terminal and navigate to the script's location.
-- Run the script:
+  - Open a terminal and navigate to the script's location.
+  - Run the script:
 
-  ```bash
-  ./KillPID.sh
-  ```
+    ```bash
+    ./KillPID.sh
+    ```
 
-1. Interactive Process Management:
+- Interactive Process Management:
 
-- View the list of running processes.
-- Enter the PID of the process you want to terminate.
-- Confirm or retry as needed.
-- Choose whether to manage another process or exit.
+  - View the list of running processes.
+  - Enter the PID of the process you want to terminate.
+  - Confirm or retry as needed.
+  - Choose whether to manage another process or exit.
 
 ## **Script Workflow**
 
-1. Process Listing:
+- Process Listing:
 
--Uses the ps aux command to display all running processes with details such as PID, CPU usage, memory usage, and command.
+  - Uses the ps aux command to display all running processes with details such as PID, CPU usage, memory usage, and command.
 
-1. User Interaction:
+- User Interaction:
 
-- Prompts the user to enter a PID.
-- Validates the input to ensure it’s numeric and corresponds to a running process.
+  - Prompts the user to enter a PID.
+  - Validates the input to ensure it’s numeric and corresponds to a running process.
 
-1. Process Termination:
+- Process Termination:
 
-- Attempts to terminate the specified process using the kill command.
-- Displays a success or failure message.
+  - Attempts to terminate the specified process using the kill command.
+  - Displays a success or failure message.
 
-1. Looping Interface:
+- Looping Interface:
 
-- Asks the user whether they want to terminate another process.
-- Repeats the workflow until the user chooses to exit.
+  - Asks the user whether they want to terminate another process.
+  - Repeats the workflow until the user chooses to exit.
 
 ## **Output**
 
 The script outputs the following details:
 
-1. Process List:
+- Process List:
 
-- Displays all running processes in the terminal.
+  - Displays all running processes in the terminal.
 
-1. Interactive Prompts:
+- Interactive Prompts:
 
-- Guides the user to input a PID and confirms the action.
+  - Guides the user to input a PID and confirms the action.
 
-1. Result Messages:
+- Result Messages:
 
-- Success: Process [PID] has been terminated.
-- Failure: Failed to terminate process [PID]. Check permissions or PID validity.
+  - Success: Process [PID] has been terminated.
+  - Failure: Failed to terminate process [PID]. Check permissions or PID validity.
 
 ## **Compatibility**
 
@@ -120,17 +120,17 @@ The script outputs the following details:
 
 ## Notes
 
-1. Caution:
+- Caution:
 
-- Terminating critical system processes can lead to system instability or crashes.
+  - Terminating critical system processes can lead to system instability or crashes.
 
-1. Validation:
+- Validation:
 
-- The script includes basic input validation to reduce errors.
+  - The script includes basic input validation to reduce errors.
 
-1. Security:
+- Security:
 
-- Ensure you run the script only on trusted systems with appropriate permissions.
+  - Ensure you run the script only on trusted systems with appropriate permissions.
 
 ## **Contribution**
 
