@@ -2,6 +2,8 @@
 
 This README provides detailed information about the Git_Config.sh bash script for Ubuntu systems. The script automates the process of verifying the presence of Git, installing it if absent, offering update/upgrade options if already present, and configuring Git with the user's specified username and email.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,6 +17,8 @@ This README provides detailed information about the Git_Config.sh bash script fo
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu systems. It ensures that Git is installed and up-to-date, and guides the user through configuring Git with a username and email for version control.
@@ -24,6 +28,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 2. If Git is installed, it provides the user with an option to update or upgrade it using the `apt` package manager.
 3. If Git is not present, it installs Git using the `apt` package manager.
 4. Configures Git with a username and email based on user input. -->
+
+<br>
 
 ## **Features**
 
@@ -39,6 +45,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 - Error Handling:
   - Provides meaningful messages for issues such as missing privileges or incompatible environments.
 
+<br>
+
 ## **Prerequisites**
 
 - System Requirements:
@@ -47,6 +55,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
   - Superuser privileges (sudo) to install or update Git.
 - Tools:
   - The apt package manager (used for installing/updating Git).
+
+<br>
 
 ## **Usage**
 
@@ -86,6 +96,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
     git config --global user.email
     ```
 
+<br>
+
 ## **Script Workflow**
 
 - Check for Git:
@@ -116,6 +128,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 
   - Displays a success message and suggests verifying the configuration.
 
+<br>
+
 ## **Output**
 
 - During execution:
@@ -133,6 +147,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
     email = youremail@example.com
   ```
 
+<br>
+
 ## **Compatibility**
 
 - Supported Systems:
@@ -141,6 +157,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 
 - Limitations:
   - The script relies on the apt package manager. It may not work on systems using other package managers like yum or dnf.
+
+<br>
 
 ## **Notes**
 
@@ -152,6 +170,8 @@ The Git_Config.sh Bash script simplifies Git setup and configuration on Ubuntu s
 
 - Customization:
   - You can modify the script to include additional Git configurations, such as setting up aliases or enabling credential caching.
+
+<br>
 
 ## **Contribution**
 
@@ -180,6 +200,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

@@ -1,17 +1,45 @@
 # Windows Virtual Box Installation PowerShell Script
 
-**Author**: Raphael Chookagian
-**Date of latest revision**: 10/05/2023
 
-## Description
+
+<br>
+
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
+
+<br>
+
+## **Overview**
 
 The `Win_VBox_Install` script, written in PowerShell, automates the process of installing VirtualBox on a Windows system. Before the installation begins, the script checks for the presence of Chocolatey on the system and installs it if necessary. Following this, the script fetches and installs the VirtualBox extension pack for version 6.1.38.
 
-## Prerequisites
+<br>
+
+## **Features**
+
+- Checks for the presence of Chocolatey and installs it if missing.
+- Automated installation of the latest VirtualBox available via Chocolatey.
+- Downloads and installs the VirtualBox extension pack (version 6.1.38).
+
+<br>
+
+## **Prerequisites**
 
 1. **Operating System**: Windows with PowerShell.
 
-## Installation and Execution Instructions
+<br>
+
+## **Usage**
 
 1. Download the `Win_VBox_Install.ps1` script.
 2. Open a PowerShell session as Administrator.
@@ -22,22 +50,32 @@ The `Win_VBox_Install` script, written in PowerShell, automates the process of i
    .\Win_VBox_Install.ps1
    ```
 
-## Features
+<br>
 
-- Checks for the presence of Chocolatey and installs it if missing.
-- Automated installation of the latest VirtualBox available via Chocolatey.
-- Downloads and installs the VirtualBox extension pack (version 6.1.38).
+## **Script Workflow**
 
-## Notes
+<br>
+
+## **Output**
+
+
+
+
+<br>
+
+## **Compatibility**
+
+
+
+<br>
+
+## **Notes**
 
 - Ensure you have an active internet connection when running the script.
 - If a different version of the VirtualBox extension pack is required, modifications to the script will be needed.
 - The script adjusts the execution policy temporarily to install Chocolatey; it's restored afterward.
 
-
-
-
-
+<br>
 
 ## **Contribution**
 
@@ -66,6 +104,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Windows directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

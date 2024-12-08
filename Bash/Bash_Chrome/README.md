@@ -121,13 +121,9 @@ Contributions are welcome! Feel free to open issues, suggest enhancements, or su
 
 - **Raphael Chookagian**
 
-<br>
-
 ## **Date of Latest Revision**
 
 - 12/07/2024
-
-<br>
 
 ## **License**
 

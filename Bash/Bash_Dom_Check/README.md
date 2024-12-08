@@ -2,6 +2,8 @@
 
 This script is designed to retrieve and display information about the given domain.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@ This script is designed to retrieve and display information about the given doma
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The Domain Analyzer script integrates with widely used domain lookup tools to gather comprehensive details about a given domain. It can retrieve registration data, DNS records, and IP address mappings. This tool is ideal for developers, IT professionals, or anyone needing quick insights into domain properties.
+
+<br>
 
 ## **Features**
 
@@ -32,6 +38,8 @@ The Domain Analyzer script integrates with widely used domain lookup tools to ga
 
 - **NSLookup**:
   - Query domain's DNS server for domain name or IP address mapping.
+
+<br>
 
 ## **Prerequisites**
 
@@ -61,6 +69,8 @@ Ensure the following requirements are met:
   - For macOS:
     - The necessary utilities are included with macOS.
 
+<br>
+
 ## **Usage**
 
 - Download and Prepare the Script:
@@ -84,6 +94,8 @@ Ensure the following requirements are met:
 
   - When prompted, input the domain name you wish to analyze (e.g., example.com).
 
+<br>
+
 ## **Script Workflow**
 
 - Input Validation:
@@ -101,6 +113,8 @@ Ensure the following requirements are met:
 - File Display:
 
   -Opens fetchDom.txt using the appropriate command for the user's OS.
+
+<br>
 
 ## **Output**
 
@@ -134,6 +148,8 @@ Example Output:
 
 The output is saved to fetchDom.txt and opened automatically.
 
+<br>
+
 ## **Compatibility**
 
 The script has been tested on:
@@ -144,12 +160,15 @@ The script has been tested on:
 - macOS:
   -Fully functional using native tools (whois, dig, etc.).
 
+<br>
 
 ## **Notes**
 
 - Ensure internet connectivity when running the script to fetch accurate domain information.
 
 - Modify the script as needed if additional domain tools or queries are required.
+
+<br>
 
 ## **Contribution**
 
@@ -178,6 +197,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

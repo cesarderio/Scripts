@@ -2,6 +2,8 @@
 
 This script offers a seamless approach to setting up the lab kit PC required for the Code Fellows OPS Course. By automating the entire process, users can bypass the manual steps, having everything set up with a single execution of this script.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@ This script offers a seamless approach to setting up the lab kit PC required for
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The `Ubuntu_Init.sh` script automates the setup process for the Code Fellows OPS Course Lab Kit PC, covering installation of essential software and configuration tasks.
+
+<br>
 
 ## **Features**
 
@@ -31,12 +37,16 @@ The `Ubuntu_Init.sh` script automates the setup process for the Code Fellows OPS
 8. **Gnome Tweaks**: Customizes the Gnome desktop environment to enhance user experience.
 9. **PolicyKit**: Verifies the presence of PolicyKit (polkit) and takes care of its installation if missing.
 
+<br>
+
 ## **Prerequisites**
 
 - A Linux-based system, preferably Ubuntu.
 - Bash shell (default on most Linux systems).
 - Internet connection for downloading packages and dependencies.
 - Sudo access to execute the script with administrative privileges.
+
+<br>
 
 ## **Usage**
 
@@ -56,6 +66,8 @@ The `Ubuntu_Init.sh` script automates the setup process for the Code Fellows OPS
 
 > **Note**: Due to the nature of operations, the script may request `sudo` privileges, prompting users for their password.
 
+<br>
+
 ## **Script Workflow**
 
 - System Update: The script begins by updating system packages to ensure your system is current.
@@ -66,9 +78,13 @@ The `Ubuntu_Init.sh` script automates the setup process for the Code Fellows OPS
 
 - Finalization: Once all steps are completed, the system is fully configured for the Code Fellows OPS course environment.
 
+<br>
+
 ## **Output**
 
 The script will output logs and status updates during the execution process. Users will see confirmation messages for each software installation and configuration step, along with any potential errors or warnings.
+
+<br>
 
 ## **Compatibility**
 
@@ -78,6 +94,8 @@ The script will output logs and status updates during the execution process. Use
 
 - The script may not be fully compatible with non-Debian-based distributions (e.g., Fedora, Arch).
 
+<br>
+
 ## **Notes**
 
 - Ensure that your system is connected to the internet, as the script will need to download several packages.
@@ -85,6 +103,8 @@ The script will output logs and status updates during the execution process. Use
 - The script may take some time to complete, depending on the system’s performance and internet speed.
 
 - It’s recommended to run the script on a clean installation to avoid conflicts with pre-installed software.
+
+<br>
 
 ## **Contribution**
 
@@ -113,6 +133,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

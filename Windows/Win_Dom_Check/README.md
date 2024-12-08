@@ -1,16 +1,30 @@
 # Domain Analyzer PowerShell Script
 
+
+
+<br>
+
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
+
+<br>
+
 ## Overview
 
 The `Domain Analyzer` script is a simple yet powerful tool to fetch domain details. It leverages tools like `whois`, `dig`, `host`, and `nslookup` to gather and present information about a specified domain. The results are then stored in a text file and opened in the default text editor for easy viewing.
 
-## Author
+<br>
 
-- **Raphael Chookagian**
-
-## Date of Latest Revision
-
-- 10/05/2023
 
 ## Features
 
@@ -24,13 +38,7 @@ The `Domain Analyzer` script is a simple yet powerful tool to fetch domain detai
 4. Outputs the results to `fetchDom.txt`.
 5. Opens the results in the default text editor for easy access and viewing.
 
-## Usage
-
-1. Save the script as `DomainAnalyzer.ps1`.
-2. Open a PowerShell window. For certain operations or in restricted environments, you might need to run it as an administrator.
-3. Navigate to the directory where you've saved the script.
-4. Execute the script with the command `.\DomainAnalyzer.ps1`.
-5. Follow the on-screen prompts.
+<br>
 
 ## Prerequisites
 
@@ -43,7 +51,40 @@ The script checks for the following tools and will prompt you to install them if
 
 Ensure you install any missing tools to get accurate results.
 
-## Security Note
+<br>
+
+## Usage
+
+1. Save the script as `DomainAnalyzer.ps1`.
+2. Open a PowerShell window. For certain operations or in restricted environments, you might need to run it as an administrator.
+3. Navigate to the directory where you've saved the script.
+4. Execute the script with the command `.\DomainAnalyzer.ps1`.
+5. Follow the on-screen prompts.
+
+<br>
+
+## **Script Workflow**
+
+
+
+
+<br>
+
+## **Output**
+
+
+
+
+<br>
+
+## **Compatibility**
+
+
+
+
+<br>
+
+## **Notes**
 
 Before running the script for the first time, ensure your PowerShell execution policy allows the execution of scripts. You might need to run:
 
@@ -52,6 +93,8 @@ Set-ExecutionPolicy RemoteSigned
 ```
 
 Always exercise caution when adjusting execution policies and only run scripts from trusted sources.
+
+<br>
 
 ## **Contribution**
 
@@ -80,6 +123,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Windows directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

@@ -2,6 +2,8 @@
 
 This script automates the installation of VirtualBox on Linux systems, with options for both version 6 and version 7. It installs the selected version, downloads the necessary extension pack, and adds VirtualBox to the GNOME shell favorites for easy access.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,15 +17,21 @@ This script automates the installation of VirtualBox on Linux systems, with opti
 - [Contribution](#contribution)
 - [Author](#author)
 
-## Overview
+<br>
+
+## **Overview**
 
 The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the installation of VirtualBox on Linux systems. Choose between version 6 and the newer version 7. Each script installs the respective version of VirtualBox,as well as fetching and installing the corresponding extension pack. To enhance usability, the scripts ensure that VirtualBox is conveniently placed in the dock/desktop as a favorite application, making it easily accessible for the user.
+
+<br>
 
 ## **Features**
 
 - Automated installation of the latest VirtualBox available in the repository.
 - Downloads and installs the VirtualBox extension pack (version 6.1.38).
 - Adds VirtualBox to the favorites in the GNOME shell for quick access.
+
+<br>
 
 ## **Prerequisites**
 
@@ -32,6 +40,8 @@ The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the in
 - **GNOME Shell**: For the functionality to add VirtualBox to the favorites, a GNOME shell environment is necessary.
 
 - **sudo privileges**: The script requires sudo privileges to install packages and manage the system.
+
+<br>
 
 ## **Usage**
 
@@ -49,6 +59,8 @@ The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the in
     ./VBox_Install.sh
     ```
 
+<br>
+
 ## **Script Workflow**
 
 - Install VirtualBox: The script installs the selected version of VirtualBox from the repository.
@@ -57,9 +69,13 @@ The `VBox_Install` scripts, `VBox6_Install` and `VBox7_Install`, automate the in
 
 - Add to GNOME Shell Favorites: VirtualBox is added to the GNOME shell favorites for easy access.
 
+<br>
+
 ## **Output**
 
 The script provides logs of its actions during execution, showing the progress of installations and configurations. Any errors or issues will be displayed in the terminal output.
+
+<br>
 
 ## **Compatibility**
 
@@ -69,11 +85,15 @@ The script provides logs of its actions during execution, showing the progress o
 
 - The extension pack is currently installed for version 6.1.38. Adjustments will be needed to install different versions.
 
-## Notes
+<br>
+
+## **Notes**
 
 - Ensure that you have internet connectivity when running the script, as it needs to download packages.
 
 - The script currently installs the VirtualBox extension pack for version 6.1.38. If you need a different version, you'll need to modify the script accordingly.
+
+<br>
 
 ## **Contribution**
 
@@ -102,6 +122,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

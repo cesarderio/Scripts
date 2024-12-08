@@ -2,19 +2,45 @@
 
 This PowerShell script is designed to automate the process of downloading, installing, and setting Google Chrome as the default browser on Windows machines.
 
-## Author
+<br>
 
-- **Raphael Chookagian**
+## **Disclaimer**
 
-## Date of Latest Revision
+Always test scripts in a safe, isolated environment before deploying them in a production setting. The author is not responsible for any issues or damages that may arise from using the script.
 
-- 10/05/2023
+<br>
+
+
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
+
+<br>
+
+## **Overview**
+
+<br>
+
+## **Features**
+
+<br>
 
 ## Prerequisites
 
 1. Windows OS
 2. PowerShell (typically comes pre-installed with Windows)
 3. Administrator privileges (for certain operations)
+
+<br>
 
 ## Usage
 
@@ -26,15 +52,34 @@ This PowerShell script is designed to automate the process of downloading, insta
 .\Win_Chrome.ps1
 ```
 
-## Notes
+<br>
+
+## **Script Workflow**
+
+
+
+<br>
+
+## **Output**
+
+
+
+
+<br>
+
+## **Compatibility**
+
+
+
+<br>
+
+## **Notes**
 
 - The script checks whether Chrome is already installed before proceeding with the download.
 - It will attempt to set Chrome as the default browser. However, depending on your Windows version and system settings, this may require user confirmation.
 
-## Disclaimer
 
-Always test scripts in a safe, isolated environment before deploying them in a production setting. The author is not responsible for any issues or damages that may arise from using the script.
-
+<br>
 
 ## **Contribution**
 
@@ -63,6 +108,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Windows directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

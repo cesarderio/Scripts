@@ -2,6 +2,8 @@
 
 This Bash script provides an interactive way to manage running processes. It allows users to view all running processes, specify a Process ID (PID), and terminate the associated process.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@ This Bash script provides an interactive way to manage running processes. It all
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## Overview
 
 The KillPID.sh script simplifies process management by automating common tasks such as listing running processes, prompting the user for a PID, and safely terminating the process. It provides a looped interface, allowing users to manage multiple processes in a single session.
+
+<br>
 
 ## **Features**
 
@@ -26,6 +32,8 @@ The KillPID.sh script simplifies process management by automating common tasks s
 - Validates user input to ensure a valid PID is entered.
 - Prompts users to continue managing processes or exit the script.
 - Improves workflow efficiency by eliminating the need to manually enter commands.
+
+<br>
 
 ## Prerequisites
 
@@ -40,6 +48,8 @@ The KillPID.sh script simplifies process management by automating common tasks s
 - User Knowledge:
 
   - Basic understanding of processes and PIDs.
+
+<br>
 
 ## **Usage**
 
@@ -68,6 +78,8 @@ The KillPID.sh script simplifies process management by automating common tasks s
   - Confirm or retry as needed.
   - Choose whether to manage another process or exit.
 
+<br>
+
 ## **Script Workflow**
 
 - Process Listing:
@@ -89,6 +101,8 @@ The KillPID.sh script simplifies process management by automating common tasks s
   - Asks the user whether they want to terminate another process.
   - Repeats the workflow until the user chooses to exit.
 
+<br>
+
 ## **Output**
 
 The script outputs the following details:
@@ -106,6 +120,8 @@ The script outputs the following details:
   - Success: Process [PID] has been terminated.
   - Failure: Failed to terminate process [PID]. Check permissions or PID validity.
 
+<br>
+
 ## **Compatibility**
 
 - Operating Systems:
@@ -117,6 +133,7 @@ The script outputs the following details:
 - Permission Requirements:
   - Sudo or root access may be required to terminate processes owned by other users.
 
+<br>
 
 ## Notes
 
@@ -131,6 +148,8 @@ The script outputs the following details:
 - Security:
 
   - Ensure you run the script only on trusted systems with appropriate permissions.
+
+<br>
 
 ## **Contribution**
 
@@ -159,6 +178,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

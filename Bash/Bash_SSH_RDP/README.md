@@ -2,6 +2,8 @@
 
 This script facilitates the installation and configuration of SSH and RDP (xrdp), and sets up the GNOME Terminal to start automatically on system startup.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,6 +17,8 @@ This script facilitates the installation and configuration of SSH and RDP (xrdp)
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The `SSH_RDP.sh` bash script simplifies the following processes:
@@ -24,6 +28,8 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
 - Automatically enables XRDP to start on system boot.
 - Configures GNOME to disable the screensaver lock and sets up the GNOME Terminal to launch on startup.
 
+<br>
+
 ## **Features**
 
 - Installs and configures SSH and XRDP.
@@ -32,10 +38,14 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
 - Sets GNOME Terminal to auto-start on login.
 - Makes the script idempotent (can be run multiple times without adverse effects).
 
+<br>
+
 ## **Prerequisites**
 
 - Ubuntu system (preferably the latest version for best compatibility).
 - Superuser privileges (for executing `sudo` commands within the script).
+
+<br>
 
 ## **Usage**
 
@@ -56,6 +66,8 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
     ```
 
 - The script will run through the installation and configuration process, providing feedback and prompts as necessary.
+
+<br>
 
 ## **Script Workflow**
 
@@ -83,16 +95,22 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
   - XRDP is enabled to start automatically on system boot.
   - The script provides a summary of the completed tasks.
 
+<br>
+
 ## **Output**
 
 - During the script execution, feedback will be provided to the user.
 - Upon completion, the script logs the installation steps, configuration, and any potential errors.
+
+<br>
 
 ## **Compatibility**
 
 - This script is tailored for Ubuntu systems.
 - Some features may work on other Debian-based distributions, but full compatibility is not guaranteed.
 - The script has been tested primarily on GNOME desktop environments.
+
+<br>
 
 ## **Notes**
 
@@ -102,6 +120,8 @@ The `SSH_RDP.sh` bash script simplifies the following processes:
 - It's recommended to review and understand the script before running it, especially in a production environment.
 - While this script is tailored for Ubuntu, some features might work on other Debian-based distributions, but full compatibility is not guaranteed.
 - Always back up important data before running scripts that make significant changes to your system.
+
+<br>
 
 ## **Contribution**
 
@@ -130,6 +150,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

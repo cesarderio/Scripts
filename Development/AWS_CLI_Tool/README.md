@@ -4,6 +4,8 @@
 
 **AWS Management CLI Tool** is a powerful, user-friendly command-line utility designed to streamline your AWS resource management tasks. Instead of navigating through the AWS Console or writing custom scripts, use this tool to quickly view, manage, and monitor your cloud resources.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -17,9 +19,13 @@
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The AWS Management CLI Tool simplifies the process of managing AWS services by providing an interactive command-line interface that enables users to perform a wide range of AWS tasks with minimal effort. From managing EC2 instances to reviewing security groups, this tool centralizes AWS service management into one utility.
+
+<br>
 
 ## **Features**
 
@@ -32,6 +38,8 @@ The AWS Management CLI Tool simplifies the process of managing AWS services by p
 - **Error Handling**: No more cryptic AWS errors. Our tool provides clear error messages to help diagnose issues quickly.
 
 - **Extensibility**: Built with modularity in mind, it's easy to extend the tool to incorporate more AWS services or additional functionalities.
+
+<br>
 
 ## 🛠️ Getting Started
 
@@ -46,6 +54,8 @@ The AWS Management CLI Tool simplifies the process of managing AWS services by p
 
 - Properly configured AWS Credentials, either using environment variables or the `~/.aws/credentials` file.
 
+<br>
+
 ## Usage
 
 1. Ensure you are in the directory containing the script.
@@ -56,6 +66,8 @@ The AWS Management CLI Tool simplifies the process of managing AWS services by p
    ```
 
 3. Navigate through the interactive menu to manage or list AWS resources.
+
+<br>
 
 ### Available Options
 
@@ -95,9 +107,13 @@ The AWS Management CLI Tool simplifies the process of managing AWS services by p
 8. **Development**:
     - List API Gateway APIs
 
+<br>
+
 ### Error Handling
 
 The tool provides basic error handling, ensuring that any AWS-related errors are displayed in a user-friendly manner. If you encounter issues not covered by the error handling, please check your AWS setup and credentials.
+
+<br>
 
 ## **Script Workflow**
 
@@ -111,6 +127,8 @@ The tool provides basic error handling, ensuring that any AWS-related errors are
 
 1. Exit: The user can exit the program at any time by selecting the quit option.
 
+<br>
+
 ## **Output**
 
 - Resource Lists: The script will list resources such as EC2 instances, S3 buckets, RDS instances, etc., based on user selection.
@@ -118,6 +136,8 @@ The tool provides basic error handling, ensuring that any AWS-related errors are
 - Error Messages: If there are issues (e.g., missing permissions), the script will display specific error messages to assist in diagnosing and resolving problems.
 
 - Interactive Prompts: The tool uses an interactive CLI interface to guide users through AWS resource management tasks.
+
+<br>
 
 ## **Compatibility**
 
@@ -127,11 +147,15 @@ The tool provides basic error handling, ensuring that any AWS-related errors are
 
 - AWS Region: The script uses the default AWS region set in your AWS credentials or environment variables.
 
+<br>
+
 ## **Notes**
 
 - AWS Permissions: Ensure the AWS user running this tool has sufficient permissions to list and manage the selected resources.
 
 - Environment Variables: AWS credentials can be configured via environment variables for ease of use, especially in automated environments.
+
+<br>
 
 ## **Contribution**
 
@@ -160,6 +184,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Development directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

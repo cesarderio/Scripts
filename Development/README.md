@@ -5,6 +5,8 @@ A dedicated space for programs, applications, and tools that are currently in de
 | ![Banner Image](../assets/dev.png) | ![Banner Image](../assets/hoode.png) |
 |:---:|:---:|
 
+<br>
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -13,15 +15,21 @@ A dedicated space for programs, applications, and tools that are currently in de
 - [Contributing](#contributing)
 - [Contact](#contact)
 
+<br>
+
 ## Overview
 
 The Development directory is where all the work-in-progress items reside. These could be utilities or tools that are yet to be finalized or are undergoing testing. Dive in to see what's cooking!
+
+<br>
 
 ## Directory Structure
 
 - **Programs**: Various standalone programs with distinct functionalities.
 - **Applications**: Larger, more intricate software projects.
 - **Tools**: Utilities designed to aid other development efforts or to streamline processes.
+
+<br>
 
 ## Usage
 
@@ -47,23 +55,49 @@ The Development directory is where all the work-in-progress items reside. These 
 
 *> Note: Always ensure you understand the function and implications of a script or tool, especially those in development, before executing or deploying them.*
 
-## Contributing
+<br>
 
-If you'd like to be a part of this development journey:
+## **Contribution**
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b my-awesome-feature`).
-3. Make your invaluable changes.
-4. Commit your changes (`git commit -am 'Added some amazing features'`).
-5. Push to the branch (`git push origin my-awesome-feature`).
-6. Create a new Pull Request targeting the `Development` branch.
+Your contributions can make these scripts even better:
 
-Feedback, bug reports, and pull requests are welcome on GitHub.
+- Fork the repository.
+- Create a new branch:
 
-## Contact
+  ```bash
+  git checkout -b my-awesome-feature
+  ```
 
-For more information, feel free to reach out. Contributions, feedback, and any discussions are always welcome!
+- Make your invaluable changes.
+- Commit your changes:
 
----
+  ```bash
+  git commit -am 'Added some amazing features'
+  ```
 
-Happy Coding! 🚀
+- Push to the branch:
+
+  ```bash
+  git push origin my-awesome-feature
+  ```
+
+- Create a new Pull Request targeting the Development directory.
+
+Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+
+<br>
+
+## **Author**
+
+- **Raphael Chookagian**
+
+## **Date of Latest Revision**
+
+- 12/07/2024
+
+## **License**
+
+- This script is provided as-is without any warranties. Users are advised to review and understand the script before executing it.
+
+- This project is licensed under the MIT License. See the LICENSE file for details.

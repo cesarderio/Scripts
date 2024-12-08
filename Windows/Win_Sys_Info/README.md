@@ -1,14 +1,32 @@
-O# PowerShell System Information Script
+# PowerShell System Information Script
 
-**Author**: Raphael Chookagian
-**Date of Latest Revision**: 10/05/2023
-**Script Purpose**: Gather and display system information on a Windows machine.
+Gather and display system information on a Windows machine.
 
-## Description
+<br>
+
+## **Table of Contents**
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Usage](#usage)
+- [Script Workflow](#script-workflow)
+- [Output](#output)
+- [Compatibility](#compatibility)
+- [Notes](#notes)
+- [Contribution](#contribution)
+- [Author](#author)
+
+<br>
+
+## **Overview**
 
 This script uses PowerShell to query and display details about the system's hostname, CPU, RAM, display adapter, and network adapters. It utilizes the `Get-WmiObject` cmdlet, which is native to Windows, ensuring compatibility without the need for additional modules.
 
-## Script Features
+<br>
+
+## **Features**
+
 
 1. **Name**: Retrieves and displays the system's hostname.
 2. **CPU**: Lists the name and details of the system's processor.
@@ -16,7 +34,13 @@ This script uses PowerShell to query and display details about the system's host
 4. **Display Adapter**: Lists the display adapters on the system.
 5. **Network Adapter**: Shows all network adapters that have a connection ID.
 
-## Instructions
+<br>
+
+## **Prerequisites**
+
+<br>
+
+## **Usage**
 
 1. **Script File**: Save the provided script as a `.ps1` file, for instance, `SystemInfo.ps1`.
 2. **Run with Elevated Privileges**: To execute the script, you'll need a PowerShell terminal opened with administrative privileges.
@@ -34,10 +58,30 @@ This script uses PowerShell to query and display details about the system's host
    .\SystemInfo.ps1
    ```
 
-## Note
+<br>
+
+## **Script Workflow**
+
+<br>
+
+## **Output**
+
+
+
+
+<br>
+
+## **Compatibility**
+
+
+
+<br>
+
+## **Notes**
 
 The script uses the `Get-WmiObject` cmdlet from PowerShell to fetch various system details. This cmdlet is natively supported on Windows platforms, ensuring you can run the script without any additional installations.
 
+<br>
 
 ## **Contribution**
 
@@ -66,6 +110,9 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Windows directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+
+<br>
 
 ## **Author**
 

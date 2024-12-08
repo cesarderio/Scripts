@@ -1,8 +1,12 @@
 # Network Scanning and Brute-Force Attack Script
 
+<br>
+
 ## **Warning**
 
 This script is intended strictly for educational purposes in a controlled environment in the fields of network security and ethical hacking. Unauthorized scanning or attacks on networks or systems is illegal and unethical. It integrates functionality for both network scanning using `nmap` and brute-force attacks using `hydra`, allowing users in a controlled environment to practice and understand these techniques.
+
+<br>
 
 ## **Table of Contents**
 
@@ -17,9 +21,13 @@ This script is intended strictly for educational purposes in a controlled enviro
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The Network Scanning and Brute-Force Attack Script combines the functionalities of `nmap` and `hydra` into one streamlined tool. It is designed to educate users on identifying network vulnerabilities through scanning and password auditing, offering an interactive, modular approach. This tool is ideal for security professionals and students learning about ethical hacking in controlled environments.
+
+<br>
 
 ## **Features**
 
@@ -40,6 +48,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
   - Guides users step-by-step through network scanning and brute-force attack options.
   - Provides flexible inputs for customization.
 
+<br>
+
 ## **Prerequisites**
 
 - Operating System: Kali Linux or a similar security-focused distribution.
@@ -50,6 +60,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 
 - Controlled Environment:
   - Ensure you have explicit permission to scan and test the target network.
+
+<br>
 
 ## **Usage**
 
@@ -73,6 +85,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
   - Choose to perform a network scan, a brute-force attack, or both.
   - Enter the required details such as IP ranges, target IPs, services, and file paths.
 
+<br>
+
 ### **Interactive Prompts**
 
 - **Network Scanning**:
@@ -84,6 +98,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
   - Specify the service to attack (e.g., ssh, ftp).
   - Choose between using predefined or custom username/password lists.
   - Enter the paths for custom lists, if applicable.
+
+<br>
 
 ## **Script Workflow**
 
@@ -112,6 +128,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 - Displays a summary of the scan and attack results.
 - Cleans up any temporary files created during execution.
 
+<br>
+
 ## **Output**
 
 - Network Scanning:
@@ -127,6 +145,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 
   - Displays error messages for issues such as invalid inputs or failed scans.
 
+<br>
+
 ## **Compatibility**
 
 - Supported Operating Systems:
@@ -138,6 +158,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 - Target Networks:
   - Ensure the script is run only on networks where you have explicit permission.
 
+<br>
+
 ## **Notes**
 
 - Ethical Usage:
@@ -148,6 +170,8 @@ The Network Scanning and Brute-Force Attack Script combines the functionalities 
 
 - Custom Lists:
   - Use secure methods to create or obtain username/password lists. Avoid using lists that contain sensitive or unauthorized data.
+
+<br>
 
 ## **Contribution**
 
@@ -176,6 +200,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Development directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

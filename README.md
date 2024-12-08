@@ -14,6 +14,8 @@ A collection of powerful scripts and codes tailored for web development and cybe
 <!-- ![Banner Image](./assets/hoode.png) -->
 <!-- ![Banner Image](./assets/hood.png) -->
 
+<br>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -23,9 +25,13 @@ A collection of powerful scripts and codes tailored for web development and cybe
 - [Contribution](#contribution)
 - [License](#license)
 
+<br>
+
 ## Introduction
 
 This repository houses a curated collection of scripts I've developed and refined over time. Whether you're diving deep into web development or navigating the intricate world of cybersecurity, these tools are designed to streamline and enhance your workflow.
+
+<br>
 
 ## Directories
 
@@ -34,6 +40,8 @@ This repository houses a curated collection of scripts I've developed and refine
 - **[Mac Directory](./Mac/)**: Collection of scripts specifically designed for macOS.
 - **[Python Directory](./Python/)**: For all things Python – be it scripts, tools, or other Python-based utilities.
 - **[Windows Directory](./Windows/)**: A compilation of scripts, particularly those written in PowerShell, designed for Windows systems.
+
+<br>
 
 ## Features
 
@@ -46,6 +54,8 @@ This repository houses a curated collection of scripts I've developed and refine
   - More descriptions coming soon
 
 ... and many more!
+
+<br>
 
 ## Installation & Usage
 
@@ -70,6 +80,8 @@ This repository houses a curated collection of scripts I've developed and refine
 *> Note: PowerShell, Python, etc. scripts will be executed according to their respective conventions or guidelines.*
 
 *> Note: Some scripts may require elevated permissions. Ensure you understand what the script does before using `sudo`.*
+
+<br>
 
 ## **Contribution**
 
@@ -98,6 +110,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the `Name` directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

@@ -2,6 +2,8 @@
 
 This script is designed for efficiently updating, upgrading, and maintaining the package system on Linux. It includes features like logging, error handling, user confirmation for upgrades, and cleanup of the local package repository.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,6 +17,8 @@ This script is designed for efficiently updating, upgrading, and maintaining the
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## Overview
 
 The `sys_update.sh` script automates the following tasks in a Linux environment:
@@ -24,6 +28,8 @@ The `sys_update.sh` script automates the following tasks in a Linux environment:
 - Removes unnecessary packages (autoremove).
 - Cleans up the local repository of retrieved package files.
 
+<br>
+
 ## **Features**
 
 - **Logging**: Records all operations in a log file, aiding in audit and troubleshooting.
@@ -31,10 +37,14 @@ The `sys_update.sh` script automates the following tasks in a Linux environment:
 - **Error Handling**: Monitors the success of operations and logs any failures, ensuring reliability.
 - **Repository Cleanup**: Includes a step to clean up the local repository, helping in managing disk space efficiently.
 
+<br>
+
 ## **Prerequisites**
 
 - A Linux-based system with `apt` package manager (Debian, Ubuntu, or derivatives).
 - Superuser privileges (for executing `sudo` commands within the script).
+
+<br>
 
 ## **Usage**
 
@@ -44,6 +54,8 @@ The `sys_update.sh` script automates the following tasks in a Linux environment:
 4. Run the script: `sudo ./sys_update.sh`.
 5. Follow the on-screen instructions, especially for upgrade confirmations.
 
+<br>
+
 ## **Script Workflow**
 
 1. The script starts by updating the package lists to fetch the latest versions available in the repositories.
@@ -51,10 +63,14 @@ The `sys_update.sh` script automates the following tasks in a Linux environment:
 3. The script performs an autoremove operation to clean up any unnecessary packages.
 4. Finally, it cleans the local repository of downloaded package files.
 
+<br>
+
 ## **Output**
 
 - The activities and outcomes of the script are logged in `/var/log/linux_update_script.log`.
 - Users can refer to this log file for detailed information about each operation performed by the script.
+
+<br>
 
 ## **Compatibility**
 
@@ -62,6 +78,8 @@ The script has been tested on:
 
 - Linux:
   -Compatible with most distributions (e.g., Ubuntu, Debian, Fedora).
+
+<br>
 
 ## Notes
 
@@ -71,6 +89,8 @@ The script has been tested on:
 - Always backup important data before running scripts that make system-wide changes.
 
 This script streamlines the process of maintaining and updating a Linux system, making it a valuable tool for system administrators and users alike.
+
+<br>
 
 ## **Contribution**
 
@@ -99,6 +119,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

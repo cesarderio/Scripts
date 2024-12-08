@@ -4,6 +4,8 @@ A collection of bash scripts tailored to simplify, automate, and enhance operati
 
 ![Bash Banner Image](../assets/bash.png)
 
+<br>
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -11,9 +13,13 @@ A collection of bash scripts tailored to simplify, automate, and enhance operati
 - [Usage](#usage)
 - [Contribution](#contribution)
 
+<br>
+
 ## Overview
 
 This directory comprises a variety of bash scripts designed for diverse functionalities on Linux. From setting up tools, checking domains, to system info retrieval, these scripts aim to make Linux operations seamless.
+
+<br>
 
 ## Highlighted Scripts
 
@@ -30,6 +36,8 @@ Here are a few scripts that stand out:
 - **[Bash VirtualBox Installer](./Bash_VirtualBox/)**: A hassle-free way to install VirtualBox.
 
 More scripts are added regularly, so dive into the directory to explore them!
+
+<br>
 
 ## Usage
 
@@ -52,6 +60,8 @@ More scripts are added regularly, so dive into the directory to explore them!
    ```
 
 *> Note: Ensure you have the necessary permissions and understand the implications of a script before executing. Some scripts might require `sudo`.*
+
+<br>
 
 ## **Contribution**
 
@@ -80,6 +90,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

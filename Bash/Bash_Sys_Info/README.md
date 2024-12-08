@@ -2,6 +2,8 @@
 
 This README provides comprehensive details about the `SystemInfo.sh` bash script, which leverages `lshw` to display information on various system components.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@ This README provides comprehensive details about the `SystemInfo.sh` bash script
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The `SystemInfo.sh` bash script is designed to fetch and display key details about the system's name, CPU, RAM, display adapter, and network adapter using the `lshw` tool.
+
+<br>
 
 ## **Features**
 
@@ -28,6 +34,8 @@ The script provides detailed information about the following system components:
 - **RAM**: Shows key details about the system's memory.
 - **Display Adapter**: Fetches information about the system's display hardware.
 - **Network Adapter**: Gathers details about the system's network interfaces.
+
+<br>
 
 ## **Prerequisites**
 
@@ -49,6 +57,8 @@ The script provides detailed information about the following system components:
 - `lshw` tool installed. It can typically be installed using package managers like `apt` or `yum` (`sudo apt install lshw`).
 - Sufficient permissions to execute `sudo` commands.
 
+<br>
+
 ## **Usage**
 
 1. Open a terminal.
@@ -65,6 +75,8 @@ The script provides detailed information about the following system components:
     ./SystemInfo.sh
     ```
 
+<br>
+
 ## **Script Workflow**
 
 - The script uses `lshw` to gather detailed hardware information.
@@ -72,6 +84,8 @@ The script provides detailed information about the following system components:
 - It extracts relevant details about the System Name, CPU, RAM, Display Adapter, and Network Adapter.
 
 - The gathered data is formatted and displayed in a user-friendly format on the terminal.
+
+<br>
 
 ## **Output**
 
@@ -83,17 +97,23 @@ The output will be displayed in the terminal and will include key system informa
 - Display Adapter information: graphics hardware details.
 - Network Adapter details: Ethernet or Wi-Fi interface details.
 
+<br>
+
 ## **Compatibility**
 
 - The script is compatible with most Linux-based systems (e.g., Ubuntu, Debian, Fedora).
 - It requires the lshw tool, which is available on most Linux distributions.
 - The script has been tested on Ubuntu but should work on other distributions with lshw installed.
 
+<br>
+
 ## Notes
 
 - `lshw` requires `sudo` permissions to fetch detailed hardware information, so the script will prompt for `sudo` access.
 - The script provides a clean, simple overview of your system's hardware.
 - Always ensure the script has been reviewed before running it on production systems to avoid unintentional issues.
+
+<br>
 
 ## **Contribution**
 
@@ -122,6 +142,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Bash directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 
