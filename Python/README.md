@@ -4,6 +4,8 @@ A collection of Python scripts tailored for various operations, mirroring the fu
 
 ![Python Banner Image](../assets/python.png)
 
+<br>
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -11,9 +13,13 @@ A collection of Python scripts tailored for various operations, mirroring the fu
 - [Usage](#usage)
 - [Contribution](#contribution)
 
+<br>
+
 ## Overview
 
 The Python directory contains scripts that offer similar functionalities as those in the Linux Bash directory but are written in Python for broader compatibility and potential enhanced functionality. Whether you're on a Linux, Windows, or MacOS platform, these Python scripts got you covered.
+
+<br>
 
 ## Highlighted Scripts
 
@@ -26,6 +32,8 @@ Here are some of the notable Python adaptations:
 - **[Python VirtualBox Install](./Py_VirtualBox/)**: A Python approach to installing VirtualBox.
 
 More scripts are continually being added, ensuring you have a Pythonic solution for various tasks!
+
+<br>
 
 ## Usage
 
@@ -48,6 +56,8 @@ More scripts are continually being added, ensuring you have a Pythonic solution 
    ```
 
 *> Note: Ensure you're using the right Python version (`python3` might be required in some systems) and understand the script's functionality before executing.*
+
+<br>
 
 ## **Contribution**
 
@@ -76,6 +86,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Python directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

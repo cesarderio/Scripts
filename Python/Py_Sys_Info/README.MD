@@ -2,6 +2,8 @@
 
 This README provides an overview of the Python System Information Script, which utilizes the lshw utility to gather and display detailed hardware information about the system.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -16,6 +18,7 @@ This README provides an overview of the Python System Information Script, which 
 - [Author](#author)
 
 
+<br>
 
 ## **Overview**
 
@@ -26,6 +29,8 @@ The Python System Information Script provides detailed insights about various co
 - RAM
 - Display Adapter
 - Network Adapter
+
+<br>
 
 ## **Features**
 
@@ -40,6 +45,8 @@ The Python System Information Script provides detailed insights about various co
 
 - Customizable:
   - The script can be easily modified to include additional hardware details or format the output.
+
+<br>
 
 ## **Prerequisites**
 
@@ -75,6 +82,8 @@ The Python System Information Script provides detailed insights about various co
 
 3. **sudo**: Some commands in the script require sudo privileges. Ensure that the user running the script has the necessary permissions.
 
+<br>
+
 ## **Usage**
 
 1. Ensure you have the required permissions to execute the script:
@@ -88,6 +97,8 @@ The Python System Information Script provides detailed insights about various co
    ```bash
    ./Py_Sys_Info.py
    ```
+
+<br>
 
 ## **Script Workflow**
 
@@ -108,6 +119,8 @@ The Python System Information Script provides detailed insights about various co
 - Display Results:
   - Outputs the gathered information in the terminal for easy reference.
 
+
+<br>
 
 ## **Output**
 
@@ -138,6 +151,8 @@ Example output:
   Network Adapter: Intel Wireless-AC 9560
   ```
 
+<br>
+
 ## **Compatibility**
 
 - Supported Systems:
@@ -145,6 +160,8 @@ Example output:
 
 - Desktop Environments:
   - Desktop environment has no impact; works on both server and desktop versions of Linux.
+
+<br>
 
 ## **Notes**
 
@@ -157,6 +174,8 @@ Example output:
 
 - Customizability:
   - The script can be enhanced to include additional details or export output to a file (e.g., JSON or CSV).
+
+<br>
 
 ## **Contribution**
 
@@ -185,6 +204,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Python directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

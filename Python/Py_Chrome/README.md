@@ -2,6 +2,8 @@
 
 This README provides an overview and instructions for the Python script tailored to automate the installation and configuration of Google Chrome on Linux systems.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@ This README provides an overview and instructions for the Python script tailored
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The `Chrome Initialization (Python Version)` script enables a streamlined installation of Google Chrome on Linux, sets it as the default browser, and adds it to GNOME favorites if applicable.
+
+<br>
 
 ## **Features**
 
@@ -32,6 +38,8 @@ The `Chrome Initialization (Python Version)` script enables a streamlined instal
 - System Compatibility Check:
   -Ensures the system supports Google Chrome installation by validating prerequisites.
 
+<br>
+
 ## **Prerequisites**
 
 - System Requirements:
@@ -41,6 +49,8 @@ The `Chrome Initialization (Python Version)` script enables a streamlined instal
   - Superuser privileges (sudo) to execute commands requiring elevated permissions.
 - Internet Connectivity:
   - Required to fetch Google Chrome packages and signing keys.
+
+<br>
 
 ## **Usage**
 
@@ -74,6 +84,8 @@ or
 
 - The script will guide you through the process, displaying success or error messages after each step.
 
+<br>
+
 ## **Script Workflow**
 
 1. **Install Prerequisites**:
@@ -98,6 +110,8 @@ or
 
 - Detects if GNOME is installed and adds Google Chrome to the favorites.
 
+<br>
+
 ## **Output**
 
 - During Execution:
@@ -109,6 +123,8 @@ or
 -Log File:
   - Optionally, a log file can be generated for troubleshooting (modify the script to enable logging if needed).
 
+<br>
+
 ## **Compatibility**
 
 - Supported Distributions:
@@ -116,6 +132,8 @@ or
 
 - Limitations:
   - The script relies on apt and GNOME-specific commands, which may not work on other package managers or desktop environments without modification.
+
+<br>
 
 ## **Notes**
 
@@ -125,6 +143,8 @@ or
   - If using a non-GNOME desktop environment, Chrome may not automatically appear in favorites; manual configuration may be required.
 - Custom Configuration:
   - You can modify the script to adjust Chrome settings, such as enabling extensions or disabling telemetry.
+
+<br>
 
 ## **Contribution**
 
@@ -153,6 +173,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Python directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

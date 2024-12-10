@@ -2,6 +2,8 @@
 
 This README provides a comprehensive guide for a Python script designed to manage Git installations and configurations on Ubuntu systems.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,6 +17,8 @@ This README provides a comprehensive guide for a Python script designed to manag
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 This Python script provides a streamlined way to manage Git on Ubuntu systems. It automates:
@@ -27,6 +31,8 @@ This Python script provides a streamlined way to manage Git on Ubuntu systems. I
 
 This script is ideal for both new setups and maintaining an existing Git installation.
 
+<br>
+
 ## **Features**
 
 - Git Verification: Automatically checks if Git is installed.
@@ -38,6 +44,8 @@ This script is ideal for both new setups and maintaining an existing Git install
 - User-Friendly: Provides clear instructions and output at each step.
 
 - Modular Workflow: Each stage of the process can be customized or extended.
+
+<br>
 
 ## **Prerequisites**
 
@@ -63,6 +71,9 @@ This script is ideal for both new setups and maintaining an existing Git install
 1. sudo Privileges:
 
 - Ensure the user running the script has sufficient privileges for package management tasks.
+
+
+<br>
 
 ## **Usage**
 
@@ -96,6 +107,8 @@ or:
 
 - The script will guide you through verifying, installing, upgrading, and configuring Git.
 
+<br>
+
 ## **Script Workflow**
 
 1. Verify Git Installation:
@@ -126,6 +139,8 @@ or:
   git config --global user.email "your.email@example.com"
   ```
 
+<br>
+
 ## **Output**
 
 The script provides real-time feedback during execution, including:
@@ -146,6 +161,7 @@ Example output:
       Email: john.doe@example.com
   ```
 
+<br>
 
 ## **Compatibility**
 
@@ -154,6 +170,7 @@ Example output:
 - Git Versions:
   - Compatible with all stable versions of Git available in the Ubuntu repositories.
 
+<br>
 
 ## **Notes**
 
@@ -165,6 +182,8 @@ Example output:
 
 - Extensibility:
   - The script can be extended to include additional Git configurations or post-installation steps, such as SSH key setup.
+
+<br>
 
 ## **Contribution**
 
@@ -193,6 +212,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Python directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 

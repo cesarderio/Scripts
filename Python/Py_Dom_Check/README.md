@@ -2,6 +2,8 @@
 
 `Domain Analyzer` is a Python script developed to probe domain details using a variety of common tools like `whois`, `dig`, `host`, and `nslookup`. The results from each tool are captured and stored in a file named `fetchDom.txt`. For users on Linux or macOS, the script will also attempt to open the results file using the system's default text viewer.
 
+<br>
+
 ## **Table of Contents**
 
 - [Overview](#overview)
@@ -15,9 +17,13 @@
 - [Contribution](#contribution)
 - [Author](#author)
 
+<br>
+
 ## **Overview**
 
 The Domain Analyzer script provides a convenient way to gather detailed information about a domain using various command-line tools. Whether you are troubleshooting, performing reconnaissance, or verifying DNS records, this script simplifies the process by consolidating outputs into a single file.
+
+<br>
 
 ## Features
 
@@ -33,6 +39,8 @@ The Domain Analyzer script provides a convenient way to gather detailed informat
 - Auto-Opening Results:
   - For Linux or macOS users, automatically opens the results file in the system's default text editor.
 
+<br>
+
 ## **Prerequisites**
 
 Ensure the following requirements are met before running the script:
@@ -45,6 +53,8 @@ Ensure the following requirements are met before running the script:
   - nslookup
 
 - All tools must be accessible through the system's PATH.
+
+<br>
 
 ## Usage
 
@@ -75,6 +85,8 @@ Ensure the following requirements are met before running the script:
 
 - On Linux/macOS, the results will automatically open in your text viewer if available.
 
+<br>
+
 ## **Script Workflow**
 
 1. Check Dependencies:
@@ -96,6 +108,8 @@ Ensure the following requirements are met before running the script:
 1. Auto-Open Results (Linux/macOS only):
 
 - Attempts to open the results in the system's default text editor.
+
+<br>
 
 ## **Output**
 
@@ -119,6 +133,8 @@ Ensure the following requirements are met before running the script:
 
 - Any missing or incomplete data will be clearly noted.
 
+<br>
+
 ## **Compatibility**
 
 - Operating Systems:
@@ -131,6 +147,8 @@ Ensure the following requirements are met before running the script:
     - A required tool is missing.
     - The provided domain name is invalid.
     - An unexpected error occurs during execution.
+
+<br>
 
 ## Notes
 
@@ -153,6 +171,8 @@ Ensure the following requirements are met before running the script:
 
 - Customization:
   - Modify the script to adjust the file path or add additional tools/commands as needed.
+
+<br>
 
 ## **Contribution**
 
@@ -181,6 +201,8 @@ Your contributions can make these scripts even better:
 - Create a new Pull Request targeting the Python directory.
 
 Contributions are welcome! Feel free to open issues, suggest enhancements, or submit pull requests to improve the script.
+
+<br>
 
 ## **Author**
 
